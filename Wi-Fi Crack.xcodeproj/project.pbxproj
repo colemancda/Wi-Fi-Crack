@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0A1D921645C11C00D8B9E4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0A1D911645C11C00D8B9E4 /* Cocoa.framework */; };
+		6E0A1D9C1645C11C00D8B9E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1D9A1645C11C00D8B9E4 /* InfoPlist.strings */; };
+		6E0A1D9E1645C11D00D8B9E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1D9D1645C11D00D8B9E4 /* main.m */; };
+		6E0A1DA51645C11D00D8B9E4 /* CDAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1DA41645C11D00D8B9E4 /* CDAAppDelegate.m */; };
+		6E0A1DA81645C11D00D8B9E4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DA61645C11D00D8B9E4 /* MainMenu.xib */; };
+		6E0A1DB21645C16800D8B9E4 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E0A1DB11645C16800D8B9E4 /* CoreWLAN.framework */; };
+		6E0A1DBA1645C1EC00D8B9E4 /* aircrack-ng in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DB81645C1EC00D8B9E4 /* aircrack-ng */; };
+		6E0A1DBB1645C1EC00D8B9E4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */; };
+		6E0A1DC01645C28A00D8B9E4 /* CDASecurityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */; };
+		6E0A1DC31645C36000D8B9E4 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1DC21645C36000D8B9E4 /* CDAAppController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E0A1D8D1645C11C00D8B9E4 /* Wi-Fi Crack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wi-Fi Crack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0A1D911645C11C00D8B9E4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6E0A1D941645C11C00D8B9E4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6E0A1D951645C11C00D8B9E4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6E0A1D961645C11C00D8B9E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6E0A1D991645C11C00D8B9E4 /* Wi-Fi Crack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wi-Fi Crack-Info.plist"; sourceTree = "<group>"; };
+		6E0A1D9B1645C11C00D8B9E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6E0A1D9D1645C11D00D8B9E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E0A1D9F1645C11D00D8B9E4 /* Wi-Fi Crack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wi-Fi Crack-Prefix.pch"; sourceTree = "<group>"; };
+		6E0A1DA31645C11D00D8B9E4 /* CDAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDAAppDelegate.h; sourceTree = "<group>"; };
+		6E0A1DA41645C11D00D8B9E4 /* CDAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAAppDelegate.m; sourceTree = "<group>"; };
+		6E0A1DA71645C11D00D8B9E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6E0A1DB11645C16800D8B9E4 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		6E0A1DB81645C1EC00D8B9E4 /* aircrack-ng */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "aircrack-ng"; sourceTree = "<group>"; };
+		6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDASecurityType.h; sourceTree = "<group>"; };
+		6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDASecurityType.m; sourceTree = "<group>"; };
+		6E0A1DC11645C36000D8B9E4 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
+		6E0A1DC21645C36000D8B9E4 /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0A1D8A1645C11C00D8B9E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0A1DB21645C16800D8B9E4 /* CoreWLAN.framework in Frameworks */,
+				6E0A1D921645C11C00D8B9E4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E0A1D821645C11C00D8B9E4 = {
+			isa = PBXGroup;
+			children = (
+				6E0A1D971645C11C00D8B9E4 /* Wi-Fi Crack */,
+				6E0A1D901645C11C00D8B9E4 /* Frameworks */,
+				6E0A1D8E1645C11C00D8B9E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E0A1D8E1645C11C00D8B9E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1D8D1645C11C00D8B9E4 /* Wi-Fi Crack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E0A1D901645C11C00D8B9E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DB11645C16800D8B9E4 /* CoreWLAN.framework */,
+				6E0A1D911645C11C00D8B9E4 /* Cocoa.framework */,
+				6E0A1D931645C11C00D8B9E4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0A1D931645C11C00D8B9E4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1D941645C11C00D8B9E4 /* AppKit.framework */,
+				6E0A1D951645C11C00D8B9E4 /* CoreData.framework */,
+				6E0A1D961645C11C00D8B9E4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		6E0A1D971645C11C00D8B9E4 /* Wi-Fi Crack */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DAF1645C12E00D8B9E4 /* Classes */,
+				6E0A1DAE1645C12800D8B9E4 /* XIB */,
+				6E0A1D981645C11C00D8B9E4 /* Supporting Files */,
+			);
+			path = "Wi-Fi Crack";
+			sourceTree = "<group>";
+		};
+		6E0A1D981645C11C00D8B9E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DB81645C1EC00D8B9E4 /* aircrack-ng */,
+				6E0A1D991645C11C00D8B9E4 /* Wi-Fi Crack-Info.plist */,
+				6E0A1D9A1645C11C00D8B9E4 /* InfoPlist.strings */,
+				6E0A1D9D1645C11D00D8B9E4 /* main.m */,
+				6E0A1D9F1645C11D00D8B9E4 /* Wi-Fi Crack-Prefix.pch */,
+				6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E0A1DAE1645C12800D8B9E4 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DA61645C11D00D8B9E4 /* MainMenu.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		6E0A1DAF1645C12E00D8B9E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DBC1645C25C00D8B9E4 /* Models */,
+				6E0A1DBD1645C26200D8B9E4 /* Views */,
+				6E0A1DB01645C14700D8B9E4 /* Controllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6E0A1DB01645C14700D8B9E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DC11645C36000D8B9E4 /* CDAAppController.h */,
+				6E0A1DC21645C36000D8B9E4 /* CDAAppController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6E0A1DBC1645C25C00D8B9E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */,
+				6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6E0A1DBD1645C26200D8B9E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DA31645C11D00D8B9E4 /* CDAAppDelegate.h */,
+				6E0A1DA41645C11D00D8B9E4 /* CDAAppDelegate.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0A1D8C1645C11C00D8B9E4 /* Wi-Fi Crack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0A1DAB1645C11D00D8B9E4 /* Build configuration list for PBXNativeTarget "Wi-Fi Crack" */;
+			buildPhases = (
+				6E0A1D891645C11C00D8B9E4 /* Sources */,
+				6E0A1D8A1645C11C00D8B9E4 /* Frameworks */,
+				6E0A1D8B1645C11C00D8B9E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wi-Fi Crack";
+			productName = "Wi-Fi Crack";
+			productReference = 6E0A1D8D1645C11C00D8B9E4 /* Wi-Fi Crack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E0A1D841645C11C00D8B9E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CDA;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = ColemanCDA;
+			};
+			buildConfigurationList = 6E0A1D871645C11C00D8B9E4 /* Build configuration list for PBXProject "Wi-Fi Crack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E0A1D821645C11C00D8B9E4;
+			productRefGroup = 6E0A1D8E1645C11C00D8B9E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0A1D8C1645C11C00D8B9E4 /* Wi-Fi Crack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E0A1D8B1645C11C00D8B9E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0A1D9C1645C11C00D8B9E4 /* InfoPlist.strings in Resources */,
+				6E0A1DA81645C11D00D8B9E4 /* MainMenu.xib in Resources */,
+				6E0A1DBA1645C1EC00D8B9E4 /* aircrack-ng in Resources */,
+				6E0A1DBB1645C1EC00D8B9E4 /* Credits.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0A1D891645C11C00D8B9E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0A1D9E1645C11D00D8B9E4 /* main.m in Sources */,
+				6E0A1DA51645C11D00D8B9E4 /* CDAAppDelegate.m in Sources */,
+				6E0A1DC01645C28A00D8B9E4 /* CDASecurityType.m in Sources */,
+				6E0A1DC31645C36000D8B9E4 /* CDAAppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E0A1D9A1645C11C00D8B9E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0A1D9B1645C11C00D8B9E4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6E0A1DA61645C11D00D8B9E4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0A1DA71645C11D00D8B9E4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E0A1DA91645C11D00D8B9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6E0A1DAA1645C11D00D8B9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6E0A1DAC1645C11D00D8B9E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wi-Fi Crack/Wi-Fi Crack-Prefix.pch";
+				INFOPLIST_FILE = "Wi-Fi Crack/Wi-Fi Crack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6E0A1DAD1645C11D00D8B9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Wi-Fi Crack/Wi-Fi Crack-Prefix.pch";
+				INFOPLIST_FILE = "Wi-Fi Crack/Wi-Fi Crack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0A1D871645C11C00D8B9E4 /* Build configuration list for PBXProject "Wi-Fi Crack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0A1DA91645C11D00D8B9E4 /* Debug */,
+				6E0A1DAA1645C11D00D8B9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0A1DAB1645C11D00D8B9E4 /* Build configuration list for PBXNativeTarget "Wi-Fi Crack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0A1DAC1645C11D00D8B9E4 /* Debug */,
+				6E0A1DAD1645C11D00D8B9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E0A1D841645C11C00D8B9E4 /* Project object */;
+}
