@@ -10,6 +10,33 @@
 
 @implementation CDAAppController
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [self refreshInterfaces];
+    }
+    return self;
+}
+
+-(void)refreshInterfaces
+{
+    [self arrayOfInterfaces];
+}
+
+-(void)refreshNetworks
+{
+    if ([self selectedInterface]) {
+        NSError *error;
+        [[self selectedInterface] scanForNetworksWithName:nil error:&error];
+        if (error) {
+            NSLog(@"%@", [error debugDescription]);
+        }
+    }
+    [self arrayOfNetworks];
+}
+
+
 #pragma mark Properties
 
 -(NSArray *)arrayOfInterfaces
@@ -25,46 +52,46 @@
 
 -(CWInterface *)selectedInterface
 {
-    NSInteger row = [_interfacesTable selectedRow];
+    NSInteger row = [[self interfacesTableView] selectedRow];
     if (row != -1) {
-        return [[self arrayOfInterfaces] objectAtIndex:row];
+        NSArray *array = [[self interfacesArrayController] arrangedObjects];
+        CWInterface *interface = [array objectAtIndex:row];
+        return interface;
     }
-    else
-    {
-        return nil;
-    }
+    else return nil;
 }
 
 -(NSArray *)arrayOfNetworks
 {
-    NSSet *setOfNetworks = [[self selectedInterface] cachedScanResults];
-    return [setOfNetworks allObjects];
+    if ([self selectedInterface]) {
+        NSSet *setOfNetworks = [[self selectedInterface] cachedScanResults];
+        NSMutableArray *arrayOfNetworks = [[NSMutableArray alloc] init];
+        for (CWNetwork *network in setOfNetworks) {
+            [arrayOfNetworks addObject:network];
+        }
+        NSLog(@"%@", [NSArray arrayWithArray:arrayOfNetworks]);
+        return [NSArray arrayWithArray:arrayOfNetworks];
+    }
+    else return nil;
 }
 
 -(CWNetwork *)selectedNetwork
 {
-    NSInteger row = [_networksTable selectedRow];
-    return [[self arrayOfNetworks] objectAtIndex:row];
+    return [[self networksArrayController] selection];
 }
 
 
 #pragma mark Action Button methods
 
 - (IBAction)refreshInterfacesButton:(id)sender {
-    NSLog(@"interfaces: %@", [self arrayOfInterfaces]);
+    [self refreshInterfaces];
+    [[self interfacesTableView] reloadData];
     
 }
 
 - (IBAction)refreshNetworksButton:(id)sender {
-    CWInterface *interface = [self selectedInterface];
-    NSError *error;
-    [interface scanForNetworksWithName:nil
-                                 error:&error];
-    if (error) {
-        NSRunAlertPanel(@"Scanning Error", @"scanning error: %@", [error debugDescription], @"OK", nil, nil);
-        NSLog(@"scanning error: %@", error);
-    }
-    else NSLog(@"networks: %@", [self arrayOfNetworks]);
+    
+    [self refreshNetworks];
 }
 
 

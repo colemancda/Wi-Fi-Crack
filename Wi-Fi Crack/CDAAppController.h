@@ -17,8 +17,10 @@
 @property (readonly) NSArray *arrayOfInterfaces;
 @property (readonly) NSArray *arrayOfNetworks;
 
-@property IBOutlet NSTableView *interfacesTable;
-@property IBOutlet NSTableView *networksTable;
+@property (weak) IBOutlet NSArrayController *interfacesArrayController;
+@property (weak) IBOutlet NSArrayController *networksArrayController;
+
+@property (weak) IBOutlet NSTableView *interfacesTableView;
 
 -(void)refreshInterfaces;
 -(void)refreshNetworks;
