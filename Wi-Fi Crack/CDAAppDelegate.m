@@ -7,6 +7,7 @@
 //
 
 #import "CDAAppDelegate.h"
+#import "CDARSSITransformer.h"
 
 @implementation CDAAppDelegate
 

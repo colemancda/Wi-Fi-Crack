@@ -27,13 +27,24 @@
 -(void)refreshNetworks
 {
     if ([self selectedInterface]) {
+        // start the UI for refreshing
+        [self setNetworkProgressIndicator:YES];
+        
         NSError *error;
         [[self selectedInterface] scanForNetworksWithName:nil error:&error];
+        
         if (error) {
+            [self setNetworkProgressIndicator:NO];
             NSLog(@"%@", [error debugDescription]);
         }
+        else
+        {
+            [[self networksArrayController] setContent:[self arrayOfNetworks]];
+            
+            // end UI indicator
+            [self setNetworkProgressIndicator:NO];
+        }
     }
-    [self arrayOfNetworks];
 }
 
 
@@ -69,7 +80,6 @@
         for (CWNetwork *network in setOfNetworks) {
             [arrayOfNetworks addObject:network];
         }
-        NSLog(@"%@", [NSArray arrayWithArray:arrayOfNetworks]);
         return [NSArray arrayWithArray:arrayOfNetworks];
     }
     else return nil;
@@ -78,6 +88,29 @@
 -(CWNetwork *)selectedNetwork
 {
     return [[self networksArrayController] selection];
+}
+
+-(BOOL)networkProgressIndicator
+{
+    return _networkProgressIndicator;
+}
+
+-(void)setNetworkProgressIndicator:(BOOL)b
+{
+    _networkProgressIndicator = b;
+    
+    // set UI
+    if (_networkProgressIndicator) {
+        [NSApp beginSheet:_networkProgressIndicatorWindow
+           modalForWindow:[NSApp mainWindow]
+            modalDelegate:self
+           didEndSelector:nil
+              contextInfo:nil];
+    }
+    if (!_networkProgressIndicator) {
+        [NSApp endSheet:_networkProgressIndicatorWindow];
+        [_networkProgressIndicatorWindow orderOut:nil];
+    }
 }
 
 

@@ -16,6 +16,9 @@
 		6E0A1DBA1645C1EC00D8B9E4 /* aircrack-ng in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DB81645C1EC00D8B9E4 /* aircrack-ng */; };
 		6E0A1DBB1645C1EC00D8B9E4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */; };
 		6E0A1DC01645C28A00D8B9E4 /* CDASecurityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */; };
+		6E18FF0F164929B6009DE27B /* CDARSSITransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18FF0E164929B6009DE27B /* CDARSSITransformer.m */; };
+		6E18FF1416492F8B009DE27B /* CWNetwork+security.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18FF1316492F8B009DE27B /* CWNetwork+security.m */; };
+		6E18FF1716493240009DE27B /* CWNetwork+channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18FF1616493240009DE27B /* CWNetwork+channel.m */; };
 		6E549751164758DE00407A74 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E549750164758DE00407A74 /* CDAAppController.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,12 @@
 		6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDASecurityType.h; sourceTree = "<group>"; };
 		6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDASecurityType.m; sourceTree = "<group>"; };
+		6E18FF0D164929B6009DE27B /* CDARSSITransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDARSSITransformer.h; sourceTree = "<group>"; };
+		6E18FF0E164929B6009DE27B /* CDARSSITransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDARSSITransformer.m; sourceTree = "<group>"; };
+		6E18FF1216492F8B009DE27B /* CWNetwork+security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CWNetwork+security.h"; sourceTree = "<group>"; };
+		6E18FF1316492F8B009DE27B /* CWNetwork+security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CWNetwork+security.m"; sourceTree = "<group>"; };
+		6E18FF1516493240009DE27B /* CWNetwork+channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CWNetwork+channel.h"; sourceTree = "<group>"; };
+		6E18FF1616493240009DE27B /* CWNetwork+channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CWNetwork+channel.m"; sourceTree = "<group>"; };
 		6E54974F164758DE00407A74 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
 		6E549750164758DE00407A74 /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +154,7 @@
 		6E0A1DBC1645C25C00D8B9E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6E18FF1116492F40009DE27B /* Categories */,
 				6E54974216473EFF00407A74 /* Classes */,
 			);
 			name = Models;
@@ -159,11 +169,24 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		6E18FF1116492F40009DE27B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6E18FF1216492F8B009DE27B /* CWNetwork+security.h */,
+				6E18FF1316492F8B009DE27B /* CWNetwork+security.m */,
+				6E18FF1516493240009DE27B /* CWNetwork+channel.h */,
+				6E18FF1616493240009DE27B /* CWNetwork+channel.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		6E54974216473EFF00407A74 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */,
 				6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */,
+				6E18FF0D164929B6009DE27B /* CDARSSITransformer.h */,
+				6E18FF0E164929B6009DE27B /* CDARSSITransformer.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -245,6 +268,9 @@
 				6E0A1DA51645C11D00D8B9E4 /* CDAAppDelegate.m in Sources */,
 				6E0A1DC01645C28A00D8B9E4 /* CDASecurityType.m in Sources */,
 				6E549751164758DE00407A74 /* CDAAppController.m in Sources */,
+				6E18FF0F164929B6009DE27B /* CDARSSITransformer.m in Sources */,
+				6E18FF1416492F8B009DE27B /* CWNetwork+security.m in Sources */,
+				6E18FF1716493240009DE27B /* CWNetwork+channel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

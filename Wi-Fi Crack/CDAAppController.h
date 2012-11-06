@@ -10,6 +10,9 @@
 #import <CoreWLAN/CoreWLAN.h>
 
 @interface CDAAppController : NSObject
+{
+    BOOL _networkProgressIndicator;
+}
 
 @property (readonly) CWInterface *selectedInterface;
 @property (readonly) CWNetwork *selectedNetwork;
@@ -21,6 +24,10 @@
 @property (weak) IBOutlet NSArrayController *networksArrayController;
 
 @property (weak) IBOutlet NSTableView *interfacesTableView;
+@property (weak) IBOutlet NSTableView *networksTableView;
+
+@property BOOL networkProgressIndicator;
+@property (weak) IBOutlet NSWindow *networkProgressIndicatorWindow;
 
 -(void)refreshInterfaces;
 -(void)refreshNetworks;
