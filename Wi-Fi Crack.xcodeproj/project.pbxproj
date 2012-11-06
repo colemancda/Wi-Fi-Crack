@@ -16,7 +16,7 @@
 		6E0A1DBA1645C1EC00D8B9E4 /* aircrack-ng in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DB81645C1EC00D8B9E4 /* aircrack-ng */; };
 		6E0A1DBB1645C1EC00D8B9E4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */; };
 		6E0A1DC01645C28A00D8B9E4 /* CDASecurityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */; };
-		6E0A1DC31645C36000D8B9E4 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A1DC21645C36000D8B9E4 /* CDAAppController.m */; };
+		6E549751164758DE00407A74 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E549750164758DE00407A74 /* CDAAppController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +37,8 @@
 		6E0A1DB91645C1EC00D8B9E4 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDASecurityType.h; sourceTree = "<group>"; };
 		6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDASecurityType.m; sourceTree = "<group>"; };
-		6E0A1DC11645C36000D8B9E4 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
-		6E0A1DC21645C36000D8B9E4 /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
+		6E54974F164758DE00407A74 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
+		6E549750164758DE00407A74 /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,9 @@
 		6E0A1D971645C11C00D8B9E4 /* Wi-Fi Crack */ = {
 			isa = PBXGroup;
 			children = (
-				6E0A1DAF1645C12E00D8B9E4 /* Classes */,
-				6E0A1DAE1645C12800D8B9E4 /* XIB */,
+				6E0A1DBC1645C25C00D8B9E4 /* Models */,
+				6E0A1DB01645C14700D8B9E4 /* Controllers */,
+				6E0A1DBD1645C26200D8B9E4 /* Views */,
 				6E0A1D981645C11C00D8B9E4 /* Supporting Files */,
 			);
 			path = "Wi-Fi Crack";
@@ -125,9 +126,10 @@
 		6E0A1DAF1645C12E00D8B9E4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6E0A1DBC1645C25C00D8B9E4 /* Models */,
-				6E0A1DBD1645C26200D8B9E4 /* Views */,
-				6E0A1DB01645C14700D8B9E4 /* Controllers */,
+				6E0A1DA31645C11D00D8B9E4 /* CDAAppDelegate.h */,
+				6E0A1DA41645C11D00D8B9E4 /* CDAAppDelegate.m */,
+				6E54974F164758DE00407A74 /* CDAAppController.h */,
+				6E549750164758DE00407A74 /* CDAAppController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -135,8 +137,7 @@
 		6E0A1DB01645C14700D8B9E4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6E0A1DC11645C36000D8B9E4 /* CDAAppController.h */,
-				6E0A1DC21645C36000D8B9E4 /* CDAAppController.m */,
+				6E0A1DAF1645C12E00D8B9E4 /* Classes */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -144,8 +145,7 @@
 		6E0A1DBC1645C25C00D8B9E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */,
-				6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */,
+				6E54974216473EFF00407A74 /* Classes */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -153,10 +153,26 @@
 		6E0A1DBD1645C26200D8B9E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6E0A1DA31645C11D00D8B9E4 /* CDAAppDelegate.h */,
-				6E0A1DA41645C11D00D8B9E4 /* CDAAppDelegate.m */,
+				6E54974316473F1500407A74 /* Classes */,
+				6E0A1DAE1645C12800D8B9E4 /* XIB */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		6E54974216473EFF00407A74 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E0A1DBE1645C28A00D8B9E4 /* CDASecurityType.h */,
+				6E0A1DBF1645C28A00D8B9E4 /* CDASecurityType.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		6E54974316473F1500407A74 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +244,7 @@
 				6E0A1D9E1645C11D00D8B9E4 /* main.m in Sources */,
 				6E0A1DA51645C11D00D8B9E4 /* CDAAppDelegate.m in Sources */,
 				6E0A1DC01645C28A00D8B9E4 /* CDASecurityType.m in Sources */,
-				6E0A1DC31645C36000D8B9E4 /* CDAAppController.m in Sources */,
+				6E549751164758DE00407A74 /* CDAAppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +366,7 @@
 				6E0A1DAD1645C11D00D8B9E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
