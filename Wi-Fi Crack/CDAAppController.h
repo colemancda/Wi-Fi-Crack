@@ -23,16 +23,25 @@
 @property (weak) IBOutlet NSArrayController *interfacesArrayController;
 @property (weak) IBOutlet NSArrayController *networksArrayController;
 
-@property (weak) IBOutlet NSTableView *interfacesTableView;
-@property (weak) IBOutlet NSTableView *networksTableView;
+@property IBOutlet NSTableView *interfacesTableView;
+@property IBOutlet NSTableView *networksTableView;
 
+// progress indicator
 @property BOOL networkProgressIndicator;
 @property (weak) IBOutlet NSWindow *networkProgressIndicatorWindow;
 
 -(void)refreshInterfaces;
 -(void)refreshNetworks;
+-(void)startCapturing;
+-(void)startCracking;
 
+// action methods
 - (IBAction)refreshInterfacesButton:(id)sender;
 - (IBAction)refreshNetworksButton:(id)sender;
+- (IBAction)captureButton:(id)sender;
+- (IBAction)crackButton:(id)sender;
+
+// cracking properties
+
 
 @end

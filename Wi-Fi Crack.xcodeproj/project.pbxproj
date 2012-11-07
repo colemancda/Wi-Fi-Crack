@@ -20,6 +20,7 @@
 		6E18FF1416492F8B009DE27B /* CWNetwork+security.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18FF1316492F8B009DE27B /* CWNetwork+security.m */; };
 		6E18FF1716493240009DE27B /* CWNetwork+channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18FF1616493240009DE27B /* CWNetwork+channel.m */; };
 		6E549751164758DE00407A74 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E549750164758DE00407A74 /* CDAAppController.m */; };
+		6EA79368164A075900ED2F4C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6EA79367164A075900ED2F4C /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		6E18FF1616493240009DE27B /* CWNetwork+channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CWNetwork+channel.m"; sourceTree = "<group>"; };
 		6E54974F164758DE00407A74 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
 		6E549750164758DE00407A74 /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
+		6EA79367164A075900ED2F4C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		6E0A1D981645C11C00D8B9E4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6EA79367164A075900ED2F4C /* icon.icns */,
 				6E0A1DB81645C1EC00D8B9E4 /* aircrack-ng */,
 				6E0A1D991645C11C00D8B9E4 /* Wi-Fi Crack-Info.plist */,
 				6E0A1D9A1645C11C00D8B9E4 /* InfoPlist.strings */,
@@ -254,6 +257,7 @@
 				6E0A1DA81645C11D00D8B9E4 /* MainMenu.xib in Resources */,
 				6E0A1DBA1645C1EC00D8B9E4 /* aircrack-ng in Resources */,
 				6E0A1DBB1645C1EC00D8B9E4 /* Credits.rtf in Resources */,
+				6EA79368164A075900ED2F4C /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
