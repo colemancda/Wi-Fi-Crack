@@ -8,6 +8,8 @@
 
 #import "CDAAppController.h"
 #import "CDASecurityType.h"
+#import "CDACrackWEPOptionsController.h"
+#import "CDACrackWPAOptionsController.h"
 
 @implementation CDAAppController
 
@@ -16,6 +18,8 @@
     self = [super init];
     if (self) {
         [self refreshInterfaces];
+        _wepOptions = [[CDACrackWEPOptionsController alloc] initWithWindowNibName:@"WEPOptions"];
+        _wpaOptions = [[CDACrackWPAOptionsController alloc] initWithWindowNibName:@"WPAOptions"];
     }
     return self;
 }
@@ -94,7 +98,7 @@
 
 -(void)startCracking
 {
-    if ([self selectedInterface] && [self selectedNetwork])
+    if ([self selectedNetwork])
     {
         // get the security type
         CDASecurityType *securityType = [[CDASecurityType alloc] init];
@@ -122,11 +126,11 @@
     // display alert sheet
     else {
         
-        NSAlert *alert = [NSAlert alertWithMessageText:@"Select interface and network"
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Select network"
                                          defaultButton:@"OK"
                                        alternateButton:nil
                                            otherButton:nil
-                             informativeTextWithFormat:@"No interface or network was selected, select an interface and a network."];
+                             informativeTextWithFormat:@"No network was selected, select a network."];
         [alert setAlertStyle:NSWarningAlertStyle];
         [alert beginSheetModalForWindow:[NSApp mainWindow]
                           modalDelegate:nil
@@ -212,7 +216,6 @@
 - (IBAction)refreshInterfacesButton:(id)sender {
     [self refreshInterfaces];
     [[self interfacesTableView] reloadData];
-    
 }
 
 - (IBAction)refreshNetworksButton:(id)sender {
@@ -228,5 +231,33 @@
     [self startCracking];
 }
 
+- (IBAction)crackOptionsButton:(id)sender {
+    
+    // if a network was selected
+    if ([self selectedNetwork]) {
+        CDASecurityType *securityType = [[CDASecurityType alloc] init];
+        int security = [securityType securityForNetwork:[self selectedNetwork]];
+        if (security == 1) {
+            [[[self wepOptions] window] makeKeyAndOrderFront:nil];
+        }
+        if (security == 2) {
+            [[[self wpaOptions] window] makeKeyAndOrderFront:nil];
+        }
+    }
+    
+    // if no network was selected
+    if (![self selectedNetwork]) {
+        NSAlert *alert = [NSAlert alertWithMessageText:@"Select network"
+                                         defaultButton:@"OK"
+                                       alternateButton:nil
+                                           otherButton:nil
+                             informativeTextWithFormat:@"No network was selected, select a network."];
+        [alert setAlertStyle:NSWarningAlertStyle];
+        [alert beginSheetModalForWindow:[NSApp mainWindow]
+                          modalDelegate:nil
+                         didEndSelector:nil
+                            contextInfo:nil];
+    }
+}
 
 @end

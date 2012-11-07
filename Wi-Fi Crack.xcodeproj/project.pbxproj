@@ -21,6 +21,10 @@
 		6E18FF1716493240009DE27B /* CWNetwork+channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E18FF1616493240009DE27B /* CWNetwork+channel.m */; };
 		6E549751164758DE00407A74 /* CDAAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E549750164758DE00407A74 /* CDAAppController.m */; };
 		6EA79368164A075900ED2F4C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6EA79367164A075900ED2F4C /* icon.icns */; };
+		6EA7936F164A0B7100ED2F4C /* WEPOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA7936D164A0B7100ED2F4C /* WEPOptions.xib */; };
+		6EA79374164A0B9800ED2F4C /* WPAOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EA79372164A0B9800ED2F4C /* WPAOptions.xib */; };
+		6EA79377164A246000ED2F4C /* CDACrackWEPOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA79376164A245F00ED2F4C /* CDACrackWEPOptionsController.m */; };
+		6EA7937A164A24A200ED2F4C /* CDACrackWPAOptionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA79379164A24A200ED2F4C /* CDACrackWPAOptionsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,12 @@
 		6E54974F164758DE00407A74 /* CDAAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAAppController.h; sourceTree = "<group>"; };
 		6E549750164758DE00407A74 /* CDAAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAAppController.m; sourceTree = "<group>"; };
 		6EA79367164A075900ED2F4C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = ../icon.icns; sourceTree = "<group>"; };
+		6EA7936D164A0B7100ED2F4C /* WEPOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WEPOptions.xib; sourceTree = "<group>"; };
+		6EA79372164A0B9800ED2F4C /* WPAOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WPAOptions.xib; sourceTree = "<group>"; };
+		6EA79375164A245F00ED2F4C /* CDACrackWEPOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDACrackWEPOptionsController.h; sourceTree = "<group>"; };
+		6EA79376164A245F00ED2F4C /* CDACrackWEPOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDACrackWEPOptionsController.m; sourceTree = "<group>"; };
+		6EA79378164A24A200ED2F4C /* CDACrackWPAOptionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDACrackWPAOptionsController.h; sourceTree = "<group>"; };
+		6EA79379164A24A200ED2F4C /* CDACrackWPAOptionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDACrackWPAOptionsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				6E0A1DA61645C11D00D8B9E4 /* MainMenu.xib */,
+				6EA7936D164A0B7100ED2F4C /* WEPOptions.xib */,
+				6EA79372164A0B9800ED2F4C /* WPAOptions.xib */,
 			);
 			name = XIB;
 			sourceTree = "<group>";
@@ -142,6 +154,10 @@
 				6E0A1DA41645C11D00D8B9E4 /* CDAAppDelegate.m */,
 				6E54974F164758DE00407A74 /* CDAAppController.h */,
 				6E549750164758DE00407A74 /* CDAAppController.m */,
+				6EA79375164A245F00ED2F4C /* CDACrackWEPOptionsController.h */,
+				6EA79376164A245F00ED2F4C /* CDACrackWEPOptionsController.m */,
+				6EA79378164A24A200ED2F4C /* CDACrackWPAOptionsController.h */,
+				6EA79379164A24A200ED2F4C /* CDACrackWPAOptionsController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -258,6 +274,8 @@
 				6E0A1DBA1645C1EC00D8B9E4 /* aircrack-ng in Resources */,
 				6E0A1DBB1645C1EC00D8B9E4 /* Credits.rtf in Resources */,
 				6EA79368164A075900ED2F4C /* icon.icns in Resources */,
+				6EA7936F164A0B7100ED2F4C /* WEPOptions.xib in Resources */,
+				6EA79374164A0B9800ED2F4C /* WPAOptions.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +293,8 @@
 				6E18FF0F164929B6009DE27B /* CDARSSITransformer.m in Sources */,
 				6E18FF1416492F8B009DE27B /* CWNetwork+security.m in Sources */,
 				6E18FF1716493240009DE27B /* CWNetwork+channel.m in Sources */,
+				6EA79377164A246000ED2F4C /* CDACrackWEPOptionsController.m in Sources */,
+				6EA7937A164A24A200ED2F4C /* CDACrackWPAOptionsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wi-Fi Crack/Wi-Fi Crack-Prefix.pch";
 				INFOPLIST_FILE = "Wi-Fi Crack/Wi-Fi Crack-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -372,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Wi-Fi Crack/Wi-Fi Crack-Prefix.pch";
 				INFOPLIST_FILE = "Wi-Fi Crack/Wi-Fi Crack-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

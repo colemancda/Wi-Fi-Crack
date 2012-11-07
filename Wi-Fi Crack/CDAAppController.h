@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreWLAN/CoreWLAN.h>
+@class CDACrackWEPOptionsController, CDACrackWPAOptionsController;
 
 @interface CDAAppController : NSObject
 {
@@ -30,6 +31,10 @@
 @property BOOL networkProgressIndicator;
 @property (weak) IBOutlet NSWindow *networkProgressIndicatorWindow;
 
+// cracking options
+@property CDACrackWEPOptionsController *wepOptions;
+@property CDACrackWPAOptionsController *wpaOptions;
+
 -(void)refreshInterfaces;
 -(void)refreshNetworks;
 -(void)startCapturing;
@@ -40,8 +45,7 @@
 - (IBAction)refreshNetworksButton:(id)sender;
 - (IBAction)captureButton:(id)sender;
 - (IBAction)crackButton:(id)sender;
-
-// cracking properties
+- (IBAction)crackOptionsButton:(id)sender;
 
 
 @end
