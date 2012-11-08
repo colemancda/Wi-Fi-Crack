@@ -158,7 +158,7 @@
                 // dictionary options (obligatory for WPA)
                 NSString *dictionaryArg = @"";
                 NSString *dictionaryPath = [[[self wpaOptions] dictionaryFile] substringFromIndex:16];
-                dictionaryArg = [[NSString alloc] initWithFormat:@"-w %@", dictionaryPath];
+                dictionaryArg = [[NSString alloc] initWithFormat:@" -w %@", dictionaryPath];
                 [extraOptions appendString:dictionaryArg];
                 
                 // save file options
@@ -166,7 +166,7 @@
                 if ([[self wpaOptions] isSaveFile]) {
                     NSString *saveFilePath = [[[self wpaOptions] saveFile] substringFromIndex:16];
                     saveFileArg = [[NSString alloc] initWithFormat:@" -l %@", saveFilePath];
-                    [extraOptions appendString:saveFilePath];
+                    [extraOptions appendString:saveFileArg];
                 }
             }
             
