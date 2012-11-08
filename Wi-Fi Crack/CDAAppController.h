@@ -10,7 +10,7 @@
 #import <CoreWLAN/CoreWLAN.h>
 @class CDACrackWEPOptionsController, CDACrackWPAOptionsController;
 
-@interface CDAAppController : NSObject
+@interface CDAAppController : NSObject <NSTableViewDelegate>
 {
     BOOL _networkProgressIndicator;
 }

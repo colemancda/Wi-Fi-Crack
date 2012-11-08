@@ -41,6 +41,17 @@
         if (error) {
             [self setNetworkProgressIndicator:NO];
             NSLog(@"%@", [error debugDescription]);
+            // show error sheet
+            NSAlert *alert = [NSAlert alertWithMessageText:@"Error"
+                                             defaultButton:@"OK"
+                                           alternateButton:nil
+                                               otherButton:nil
+                                 informativeTextWithFormat:@"%@", [error localizedDescription]];
+            [alert setAlertStyle:NSWarningAlertStyle];
+            [alert beginSheetModalForWindow:[NSApp mainWindow]
+                              modalDelegate:nil
+                             didEndSelector:nil
+                                contextInfo:nil];
         }
         else
         {
@@ -114,9 +125,54 @@
             // destination network values
             NSString *targetBSSID = [[self selectedNetwork] bssid];
             
+            NSMutableString *extraOptions = [[NSMutableString alloc] initWithFormat:@""];
+            
+            // get extra options if WEP
+            if (security == 1) {
+                // dictionary options
+                NSString *dictionaryArg = @"";
+                if ([[self wepOptions] isDictionaryFile]) {
+                    NSString *dictionaryPath = [[[self wepOptions] dictionaryFile] substringFromIndex:16];
+                    dictionaryArg = [[NSString alloc] initWithFormat:@" -w %@", dictionaryPath];
+                    [extraOptions appendString:dictionaryArg];
+                }
+                // save file options
+                NSString *saveFileArg = @"";
+                if ([[self wepOptions] isSaveFile]) {
+                    NSString *saveFilePath = [[[self wepOptions] saveFile] substringFromIndex:16];
+                    saveFileArg = [[NSString alloc] initWithFormat:@" -l %@", saveFilePath];
+                    [extraOptions appendString:saveFileArg];
+                }
+                // disable korek attack options
+                NSString *korekAttack = @"";
+                if ([[self wepOptions] isKorekAttack]) {
+                    NSNumber *attack = [[self wepOptions] korekAttack];
+                    korekAttack = [[NSString alloc] initWithFormat:@" -k %@", attack];
+                    [extraOptions appendString:korekAttack];
+                }
+                
+            }
+            
+            // get extra options if WPA
+            if (security == 2) {
+                // dictionary options (obligatory for WPA)
+                NSString *dictionaryArg = @"";
+                NSString *dictionaryPath = [[[self wpaOptions] dictionaryFile] substringFromIndex:16];
+                dictionaryArg = [[NSString alloc] initWithFormat:@"-w %@", dictionaryPath];
+                [extraOptions appendString:dictionaryArg];
+                
+                // save file options
+                NSString *saveFileArg = @"";
+                if ([[self wpaOptions] isSaveFile]) {
+                    NSString *saveFilePath = [[[self wpaOptions] saveFile] substringFromIndex:16];
+                    saveFileArg = [[NSString alloc] initWithFormat:@" -l %@", saveFilePath];
+                    [extraOptions appendString:saveFilePath];
+                }
+            }
+            
             // launch 'aircrack-ng' UNIX app in terminal
             NSString *script = [NSString stringWithFormat:
-                                @"tell application \"Terminal\"\n activate \ndo script \"\\\"%@\\\" -a %d -b %@ /private/tmp/airportSniff*.cap\"\n end tell", path, security, targetBSSID];
+                                @"tell application \"Terminal\"\n activate \ndo script \"\\\"%@\\\" -a %d -b %@ /private/tmp/airportSniff*.cap %@\"\n end tell", path, security, targetBSSID, extraOptions];
             
             NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
             [appleScript executeAndReturnError:nil];
@@ -237,10 +293,18 @@
     if ([self selectedNetwork]) {
         CDASecurityType *securityType = [[CDASecurityType alloc] init];
         int security = [securityType securityForNetwork:[self selectedNetwork]];
+        // wep panel
         if (security == 1) {
+            if ([[[self wpaOptions] window] isVisible]) {
+                [[[self wpaOptions] window] close];
+            }
             [[[self wepOptions] window] makeKeyAndOrderFront:nil];
         }
+        // wpa panel
         if (security == 2) {
+            if ([[[self wepOptions] window] isVisible]) {
+                [[[self wepOptions] window] close];
+            }
             [[[self wpaOptions] window] makeKeyAndOrderFront:nil];
         }
     }
@@ -259,5 +323,24 @@
                             contextInfo:nil];
     }
 }
+
+
+#pragma mark tableView delegate methods
+
+-(void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    // close open panel if selected network conflicts with open panel
+    CDASecurityType *securityType = [[CDASecurityType alloc] init];
+    int security = [securityType securityForNetwork:[self selectedNetwork]];
+    if (security == 1 && [[[self wpaOptions] window] isVisible]) {
+        [[[self wpaOptions] window] close];
+        [[[self wepOptions] window] makeKeyAndOrderFront:nil];
+    }
+    if (security == 2 && [[[self wepOptions] window] isVisible]) {
+        [[[self wepOptions] window] close];
+        [[[self wpaOptions] window] makeKeyAndOrderFront:nil];
+    }
+}
+
 
 @end

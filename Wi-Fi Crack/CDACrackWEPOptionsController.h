@@ -18,4 +18,7 @@
 @property NSNumber *korekAttack;
 @property NSString *saveFile;
 
+- (IBAction)openFileButton:(id)sender;
+- (IBAction)saveAsButton:(id)sender;
+
 @end

@@ -10,4 +10,12 @@
 
 @interface CDACrackWPAOptionsController : NSWindowController
 
+@property BOOL isSaveFile;
+
+@property NSString *dictionaryFile;
+@property NSString *saveFile;
+
+- (IBAction)openFileButton:(id)sender;
+- (IBAction)saveAsButton:(id)sender;
+
 @end
