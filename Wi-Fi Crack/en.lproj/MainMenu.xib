@@ -949,7 +949,7 @@
 												<object class="NSTextFieldCell" key="NSCell" id="1037323977">
 													<int key="NSCellFlags">67108864</int>
 													<int key="NSCellFlags2">272629760</int>
-													<string key="NSContents">Airport tool: The button below will launch the 'airport' command-line tool which will ask you for your administrator's password. It will set the selected wireless interface to monitor mode and capture all packets in the selected wireless network's channel. Let the app run for a couple of minutes before continuing. You can launch the next command-line tool simultaneously with this one. Use 'control + c' combination to terminate the process.</string>
+													<string key="NSContents">Airport tool: The button below will launch the 'airport' command-line tool which will ask you for your administrator's password. It will set the selected wireless interface to monitor mode and capture all packets in the selected wireless network's channel. Let the app run for a couple of minutes before continuing. You can launch the next command-line tool simultaneously with this one. Use 'control + c' combination to terminate the process and return your wireless interface to its original state.</string>
 													<object class="NSFont" key="NSSupport" id="240743986">
 														<string key="NSName">LucidaGrande</string>
 														<double key="NSSize">13</double>
