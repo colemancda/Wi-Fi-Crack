@@ -49,12 +49,6 @@
 
 -(void)refresh:(id)sender
 {
-    // show progress indicator
-    
-    self.progressIndicator.hidden = NO;
-    
-    [self.progressIndicator startAnimation:nil];
-    
     self.refreshButton.enabled = NO;
     
     [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
@@ -62,10 +56,6 @@
         self.interfaces = [[WFCStore sharedStore] allInterfaces];
         
         [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-            
-            [self.progressIndicator stopAnimation:nil];
-            
-            self.progressIndicator.hidden = YES;
            
             [self.tableView reloadData];
             

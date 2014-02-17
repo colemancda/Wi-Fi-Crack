@@ -21,8 +21,6 @@
 
 @property (weak) IBOutlet NSButton *refreshButton;
 
-@property (weak) IBOutlet NSProgressIndicator *progressIndicator;
-
 @property (weak) IBOutlet NSTableView *tableView;
 
 @end

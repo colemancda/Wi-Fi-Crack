@@ -7,7 +7,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="WFCInterfaceSelectionViewController">
             <connections>
-                <outlet property="progressIndicator" destination="b40-D8-eAK" id="Cbp-mf-Gkn"/>
                 <outlet property="refreshButton" destination="33z-h4-esg" id="FNv-Jj-PmF"/>
                 <outlet property="tableView" destination="RMt-f7-yUH" id="h2W-OC-ygr"/>
                 <outlet property="view" destination="1" id="2"/>
@@ -201,19 +200,13 @@
                         <action selector="refresh:" target="-2" id="svQ-1L-cVc"/>
                     </connections>
                 </button>
-                <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="b40-D8-eAK">
-                    <rect key="frame" x="20" y="20" width="16" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                </progressIndicator>
             </subviews>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="b40-D8-eAK" secondAttribute="bottom" constant="20" id="NYD-fB-aIR"/>
                 <constraint firstItem="wqw-0v-m5b" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" id="PKd-bt-Zdj"/>
                 <constraint firstAttribute="centerX" secondItem="33z-h4-esg" secondAttribute="centerX" id="ZgC-gh-dYd"/>
                 <constraint firstItem="wqw-0v-m5b" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="bgh-kW-Rc0"/>
                 <constraint firstItem="33z-h4-esg" firstAttribute="top" secondItem="wqw-0v-m5b" secondAttribute="bottom" constant="13" id="dA1-Ce-h8U"/>
                 <constraint firstAttribute="bottom" secondItem="33z-h4-esg" secondAttribute="bottom" constant="20" id="eni-vS-x3A"/>
-                <constraint firstItem="b40-D8-eAK" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="gMI-dc-Q07"/>
                 <constraint firstItem="33z-h4-esg" firstAttribute="top" secondItem="wqw-0v-m5b" secondAttribute="bottom" constant="13" id="rHr-yY-gPy"/>
                 <constraint firstAttribute="trailing" secondItem="wqw-0v-m5b" secondAttribute="trailing" constant="20" id="xy9-hm-d5P"/>
             </constraints>
