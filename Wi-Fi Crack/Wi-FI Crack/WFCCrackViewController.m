@@ -7,7 +7,7 @@
 //
 
 #import "WFCCrackViewController.h"
-
+#import "WFCStore.h"
 
 @interface WFCCrackViewController ()
 
@@ -33,6 +33,12 @@
         self.title = NSLocalizedString(@"Crack", @"Crack");
     }
     return self;
+}
+
+-(void)crack:(id)sender
+{
+    [[WFCStore sharedStore] startCrack];
+    
 }
 
 @end

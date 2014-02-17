@@ -11,4 +11,6 @@
 
 @interface WFCCrackViewController : WFCProceedViewController
 
+-(IBAction)crack:(id)sender;
+
 @end

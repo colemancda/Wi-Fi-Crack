@@ -7,6 +7,7 @@
 //
 
 #import "WFCCaptureViewController.h"
+#import "WFCStore.h"
 
 @interface WFCCaptureViewController ()
 
@@ -33,5 +34,12 @@
     }
     return self;
 }
+
+- (IBAction)capture:(id)sender {
+    
+    [[WFCStore sharedStore] startCapture];
+    
+}
+
 
 @end

@@ -114,14 +114,14 @@
                             <tabViewItem label="Interface" identifier="1" id="680">
                                 <view key="view" id="683">
                                     <rect key="frame" x="10" y="33" width="516" height="314"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="703">
                                             <rect key="frame" x="17" y="58" width="482" height="253"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <clipView key="contentView" id="aJU-un-L1z">
                                                 <rect key="frame" x="1" y="17" width="480" height="235"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" headerView="706" id="704">
                                                         <rect key="frame" x="0.0" y="0.0" width="480" height="235"/>
@@ -202,7 +202,7 @@
                                                 <rect key="frame" x="1" y="236" width="480" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="707">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="707">
                                                 <rect key="frame" x="224" y="17" width="15" height="102"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -236,7 +236,7 @@
                             <tabViewItem label="Network" identifier="2" id="681">
                                 <view key="view" id="682">
                                     <rect key="frame" x="10" y="33" width="516" height="314"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="840">
                                             <rect key="frame" x="215" y="10" width="87" height="32"/>
@@ -254,7 +254,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <clipView key="contentView" id="Ifq-uz-AKW">
                                                 <rect key="frame" x="1" y="17" width="480" height="235"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" autosaveColumns="NO" headerView="1027" id="1025">
                                                         <rect key="frame" x="0.0" y="0.0" width="605" height="235"/>
@@ -333,10 +333,10 @@
                                                                     <binding destination="943" name="value" keyPath="arrangedObjects.rssiValue" id="1222">
                                                                         <dictionary key="options">
                                                                             <bool key="NSValidatesImmediately" value="YES"/>
-                                                                            <string key="NSValueTransformerName">CDARSSITransformer</string>
+                                                                            <bool key="NSCreatesSortDescriptor" value="NO"/>
                                                                             <bool key="NSAllowsEditingMultipleValuesSelection" value="NO"/>
                                                                             <bool key="NSRaisesForNotApplicableKeys" value="NO"/>
-                                                                            <bool key="NSCreatesSortDescriptor" value="NO"/>
+                                                                            <string key="NSValueTransformerName">CDARSSITransformer</string>
                                                                         </dictionary>
                                                                     </binding>
                                                                 </connections>
@@ -375,7 +375,7 @@
                                                 <rect key="frame" x="1" y="236" width="480" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="1028">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="1028">
                                                 <rect key="frame" x="224" y="17" width="15" height="102"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -440,7 +440,7 @@
                             <tabViewItem label="Crack" identifier="1" id="700">
                                 <view key="view" id="701">
                                     <rect key="frame" x="10" y="33" width="516" height="314"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="817">
                                             <rect key="frame" x="194" y="10" width="128" height="32"/>

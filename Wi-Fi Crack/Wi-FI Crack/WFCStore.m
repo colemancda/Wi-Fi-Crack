@@ -32,13 +32,24 @@
     
     CWInterface *defaultInterface = [CWInterface interface];
     
-    [interfaces addObject:defaultInterface];
+    if (defaultInterface) {
+        
+        [interfaces addObject:defaultInterface];
+    }
     
     for (NSString *interfaceName in [CWInterface interfaceNames]) {
         
         // add other interfaces
         
-        if (![interfaceName isEqualToString:defaultInterface.interfaceName]) {
+        if (defaultInterface) {
+            
+            if (![interfaceName isEqualToString:defaultInterface.interfaceName]) {
+                
+                [interfaces addObject:[CWInterface interfaceWithName:interfaceName]];
+            }
+        }
+        
+        else {
             
             [interfaces addObject:[CWInterface interfaceWithName:interfaceName]];
         }
@@ -61,17 +72,52 @@
         return nil;
     }
     
+    /*
+     
+    // Only WEP networks
+    
     NSMutableArray *wepNetworks = [[NSMutableArray alloc] init];
     
     for (CWNetwork *network in networkSet) {
         
-        if ([network supportsSecurity:kCWSecurityWEP]) {
+        if ([network supportsSecurity:kCWSecurityWEP] ||
+            [network supportsSecurity:kCWSecurityDynamicWEP] ||
+            [network supportsSecurity:kCWSecurityUnknown]) {
             
             [wepNetworks addObject:network];
         }
     }
     
     return [NSArray arrayWithArray:wepNetworks];
+     
+     */
+    
+    return networkSet.allObjects;
+}
+
+-(void)startCapture
+{
+    if (!self.selectedInterface || self.selectedNetwork) {
+        
+        [NSException raise:NSInternalInconsistencyException
+                    format:@"Must have an interface and network to capture packets"];
+    }
+    
+    // launch 'airport' in terminal
+    NSString *script = [NSString stringWithFormat:
+                        @"tell application \"Terminal\"\n activate \ndo script \"sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport %@ sniff %ld\"\n end tell",
+                        self.selectedInterface.interfaceName,
+                        self.selectedNetwork.wlanChannel.channelNumber];
+    
+    NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
+    
+    [appleScript executeAndReturnError:nil];
+}
+
+-(void)startCrack
+{
+    
+    
 }
 
 @end

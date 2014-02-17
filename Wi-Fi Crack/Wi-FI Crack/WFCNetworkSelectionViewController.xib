@@ -178,10 +178,10 @@
                                         </textFieldCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         <prototypeCellViews>
-                                            <levelIndicator verticalHuggingPriority="750" id="gne-6f-d5A">
+                                            <levelIndicator identifier="strength" verticalHuggingPriority="750" id="gne-6f-d5A">
                                                 <rect key="frame" x="422" y="1" width="115" height="16"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <levelIndicatorCell key="cell" alignment="left" doubleValue="2" maxValue="2" warningValue="2" criticalValue="2" levelIndicatorStyle="relevancy" id="NVW-1O-DG1"/>
+                                                <levelIndicatorCell key="cell" alignment="left" doubleValue="5" maxValue="30" warningValue="2" criticalValue="2" levelIndicatorStyle="continuousCapacity" id="NVW-1O-DG1"/>
                                             </levelIndicator>
                                         </prototypeCellViews>
                                     </tableColumn>

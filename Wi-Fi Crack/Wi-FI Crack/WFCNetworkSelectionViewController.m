@@ -65,17 +65,22 @@
        
         self.networks = [[WFCStore sharedStore] allNetworks:&error];
         
-        if (error) {
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
             
-            [NSApp presentError:error];
-        }
-        
-        [self.progressIndicator stopAnimation:nil];
-        
-        self.progressIndicator.hidden = YES;
-        
-        self.scanButton.enabled = YES;
-        
+            if (error) {
+                
+                [NSApp presentError:error];
+            }
+            
+            [self.progressIndicator stopAnimation:nil];
+            
+            self.progressIndicator.hidden = YES;
+            
+            self.scanButton.enabled = YES;
+            
+            [self.tableView reloadData];
+            
+        }];
     }];
 }
 
@@ -134,11 +139,30 @@
         
         NSLevelIndicator *levelIndicator = (NSLevelIndicator *)view;
         
-        levelIndicator.integerValue = network.noiseMeasurement;
+        levelIndicator.integerValue = network.noiseMeasurement + 100;
     }
     
     return view;
 }
 
+-(void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    if (self.tableView.selectedRow == -1) {
+        
+        self.canProceed = NO;
+        
+    }
+    
+    else {
+        
+        // get interface for row...
+        
+        self.selectedNetwork = _networks[self.tableView.selectedRow];
+        
+        [WFCStore sharedStore].selectedNetwork = self.selectedNetwork;
+        
+        self.canProceed = YES;
+    }
+}
 
 @end

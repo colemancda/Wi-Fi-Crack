@@ -11,4 +11,6 @@
 
 @interface WFCCaptureViewController : WFCProceedViewController
 
+- (IBAction)capture:(id)sender;
+
 @end
