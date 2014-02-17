@@ -10,4 +10,6 @@
 
 @interface WFCNetworkSelectionViewController : NSViewController
 
+-(IBAction)scan:(id)sender;
+
 @end
