@@ -31,7 +31,7 @@
     
     // load initial VC
     self.visibleVC = (WFCProceedViewController *)self.interfaceVC;
-    
+        
     // KVO
     [self addObserver:self
            forKeyPath:@"visibleVC"
@@ -78,11 +78,9 @@
 
 - (IBAction)next:(id)sender {
     
-    if (self.visibleVC == (WFCProceedViewController *)self.interfaceVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.captureVC) {
         
-        self.visibleVC = self.networkVC;
-        
-        self.backButton.hidden = NO;
+        self.visibleVC = (WFCProceedViewController *)self.crackVC;
     }
     
     if (self.visibleVC == (WFCProceedViewController *)self.networkVC) {
@@ -90,19 +88,23 @@
         self.visibleVC = (WFCProceedViewController *)self.captureVC;
     }
     
-    if (self.visibleVC == (NSViewController *)self.captureVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.interfaceVC) {
         
-        self.visibleVC = (WFCProceedViewController *)self.crackVC;
+        self.visibleVC = self.networkVC;
         
+        self.backButton.hidden = NO;
     }
+    
     
 }
 
 - (IBAction)back:(id)sender {
     
-    if (self.visibleVC == (WFCProceedViewController *)self.crackVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.networkVC) {
         
-        self.visibleVC = (WFCProceedViewController *)self.captureVC;
+        self.visibleVC = (WFCProceedViewController *)self.interfaceVC;
+        
+        self.backButton.hidden = YES;
     }
     
     if (self.visibleVC == (WFCProceedViewController *)self.captureVC) {
@@ -111,12 +113,12 @@
         
     }
     
-    if (self.visibleVC == (WFCProceedViewController *)self.networkVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.crackVC) {
         
-        self.visibleVC = (WFCProceedViewController *)self.interfaceVC;
-        
-        self.backButton.hidden = YES;
+        self.visibleVC = (WFCProceedViewController *)self.captureVC;
     }
+    
+    
 }
 
 #pragma mark - KVO

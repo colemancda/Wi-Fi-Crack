@@ -7,7 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="WFCNetworkSelectionViewController">
             <connections>
-                <outlet property="view" destination="dK6-Vq-Qn1" id="07E-t7-eHC"/>
+                <outlet property="progressIndicator" destination="Ep9-gh-jzk" id="9Pl-gw-ihj"/>
+                <outlet property="scanButton" destination="c24-Nb-6re" id="jpN-9F-hPU"/>
+                <outlet property="tableView" destination="by4-oY-v6W" id="yvj-nh-vBo"/>
+                <outlet property="view" destination="dK6-Vq-Qn1" id="bz8-oQ-pUz"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
@@ -16,15 +19,15 @@
             <rect key="frame" x="0.0" y="0.0" width="500" height="319"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <scrollView ambiguous="YES" misplaced="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-U9-Gsn">
-                    <rect key="frame" x="0.0" y="54" width="500" height="265"/>
+                <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-U9-Gsn">
+                    <rect key="frame" x="20" y="54" width="460" height="245"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <clipView key="contentView" ambiguous="YES" misplaced="YES" id="wUr-ip-DxM">
-                        <rect key="frame" x="1" y="17" width="498" height="247"/>
+                    <clipView key="contentView" id="wUr-ip-DxM">
+                        <rect key="frame" x="1" y="17" width="458" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="zAT-gF-t3L" id="by4-oY-v6W">
-                                <rect key="frame" x="0.0" y="0.0" width="498" height="247"/>
+                                <rect key="frame" x="0.0" y="0.0" width="458" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -43,7 +46,7 @@
                                         </textFieldCell>
                                         <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                     </tableColumn>
-                                    <tableColumn width="376" minWidth="40" maxWidth="1000" id="BG5-gI-vMW">
+                                    <tableColumn width="336" minWidth="40" maxWidth="1000" id="BG5-gI-vMW">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -66,15 +69,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="zO2-Vj-Z4v">
-                        <rect key="frame" x="483" y="17" width="16" height="0.0"/>
+                        <rect key="frame" x="443" y="17" width="16" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <tableHeaderView key="headerView" id="zAT-gF-t3L">
-                        <rect key="frame" x="0.0" y="0.0" width="498" height="17"/>
+                        <rect key="frame" x="0.0" y="0.0" width="458" height="17"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </tableHeaderView>
                 </scrollView>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c24-Nb-6re">
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c24-Nb-6re">
                     <rect key="frame" x="216" y="13" width="69" height="32"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="push" title="Scan" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Plh-vm-IwQ">
@@ -85,15 +88,21 @@
                         <action selector="scan:" target="-2" id="58Y-4K-RlH"/>
                     </connections>
                 </button>
-                <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-gh-jzk">
-                    <rect key="frame" x="20" y="22" width="16" height="16"/>
+                <progressIndicator hidden="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Ep9-gh-jzk">
+                    <rect key="frame" x="20" y="20" width="16" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                 </progressIndicator>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="TXL-U9-Gsn" secondAttribute="trailing" id="Uro-mn-w1k"/>
-                <constraint firstItem="TXL-U9-Gsn" firstAttribute="top" secondItem="dK6-Vq-Qn1" secondAttribute="top" id="jhL-eg-Fsl"/>
-                <constraint firstItem="TXL-U9-Gsn" firstAttribute="leading" secondItem="dK6-Vq-Qn1" secondAttribute="leading" id="pR9-H6-x7A"/>
+                <constraint firstAttribute="bottom" secondItem="Ep9-gh-jzk" secondAttribute="bottom" constant="20" id="UGU-4U-gJd"/>
+                <constraint firstAttribute="trailing" secondItem="TXL-U9-Gsn" secondAttribute="trailing" constant="20" id="Uro-mn-w1k"/>
+                <constraint firstAttribute="bottom" secondItem="c24-Nb-6re" secondAttribute="bottom" constant="20" id="apR-Uo-eOW"/>
+                <constraint firstItem="Ep9-gh-jzk" firstAttribute="leading" secondItem="dK6-Vq-Qn1" secondAttribute="leading" constant="20" id="fUD-OG-GbD"/>
+                <constraint firstAttribute="centerX" secondItem="c24-Nb-6re" secondAttribute="centerX" id="hux-nK-TE5"/>
+                <constraint firstItem="TXL-U9-Gsn" firstAttribute="top" secondItem="dK6-Vq-Qn1" secondAttribute="top" constant="20" id="jhL-eg-Fsl"/>
+                <constraint firstItem="TXL-U9-Gsn" firstAttribute="centerX" secondItem="c24-Nb-6re" secondAttribute="centerX" id="nzJ-aM-LOF"/>
+                <constraint firstItem="TXL-U9-Gsn" firstAttribute="leading" secondItem="dK6-Vq-Qn1" secondAttribute="leading" constant="20" id="pR9-H6-x7A"/>
+                <constraint firstItem="c24-Nb-6re" firstAttribute="top" secondItem="TXL-U9-Gsn" secondAttribute="bottom" constant="13" id="waF-0A-o6F"/>
             </constraints>
         </customView>
     </objects>

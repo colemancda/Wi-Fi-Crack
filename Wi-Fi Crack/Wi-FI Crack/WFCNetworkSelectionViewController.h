@@ -8,9 +8,22 @@
 
 #import <Cocoa/Cocoa.h>
 #import "WFCProceedViewController.h"
+#import <CoreWLAN/CoreWLAN.h>
 
-@interface WFCNetworkSelectionViewController : WFCProceedViewController
+@interface WFCNetworkSelectionViewController : WFCProceedViewController <NSTableViewDataSource, NSTableViewDelegate>
+
+@property (readonly) NSArray *networks;
+
+@property (readonly) CWNetwork *selectedNetwork;
 
 -(IBAction)scan:(id)sender;
+
+#pragma mark - UI
+
+@property (weak) IBOutlet NSTableView *tableView;
+
+@property (weak) IBOutlet NSButton *scanButton;
+
+@property (weak) IBOutlet NSProgressIndicator *progressIndicator;
 
 @end

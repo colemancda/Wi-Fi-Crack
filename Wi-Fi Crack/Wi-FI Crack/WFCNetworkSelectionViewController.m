@@ -10,6 +10,10 @@
 
 @interface WFCNetworkSelectionViewController ()
 
+@property NSArray *networks;
+
+@property CWNetwork *selectedNetwork;
+
 @end
 
 @implementation WFCNetworkSelectionViewController
@@ -34,5 +38,17 @@
     }
     return self;
 }
+
+#pragma mark - Actions
+
+-(void)scan:(id)sender
+{
+    
+    
+}
+
+#pragma mark
+
+
 
 @end

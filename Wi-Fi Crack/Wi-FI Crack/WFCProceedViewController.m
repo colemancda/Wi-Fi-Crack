@@ -10,8 +10,6 @@
 
 @interface WFCProceedViewController ()
 
-@property BOOL canProceed;
-
 @end
 
 @implementation WFCProceedViewController

@@ -650,11 +650,11 @@
         <window title="Wi-Fi Crack" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" appearanceType="lightContent" frameAutosaveName="MainWindow" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
-            <rect key="contentRect" x="335" y="390" width="553" height="412"/>
+            <rect key="contentRect" x="335" y="390" width="553" height="389"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="800"/>
             <value key="minSize" type="size" width="480" height="360"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="553" height="412"/>
+                <rect key="frame" x="0.0" y="0.0" width="553" height="389"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button hidden="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k2Z-YF-Z6W">
@@ -671,7 +671,7 @@
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Dza-am-OWE">
                         <rect key="frame" x="469" y="13" width="70" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vt8-Vc-167">
+                        <buttonCell key="cell" type="push" title="Next" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="vt8-Vc-167">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -680,10 +680,10 @@
                         </connections>
                     </button>
                     <box autoresizesSubviews="NO" title="Title" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="OOI-9e-oZI">
-                        <rect key="frame" x="17" y="57" width="519" height="335"/>
+                        <rect key="frame" x="17" y="57" width="519" height="312"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView">
-                            <rect key="frame" x="1" y="1" width="517" height="316"/>
+                            <rect key="frame" x="1" y="1" width="517" height="293"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
                         <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>

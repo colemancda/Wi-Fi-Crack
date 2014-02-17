@@ -10,6 +10,6 @@
 
 @interface WFCProceedViewController : NSViewController
 
-@property (readonly) BOOL canProceed;
+@property BOOL canProceed;
 
 @end

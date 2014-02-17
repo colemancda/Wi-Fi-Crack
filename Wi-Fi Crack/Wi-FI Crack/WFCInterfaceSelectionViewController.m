@@ -134,11 +134,21 @@
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
-    if (self.tableView.selectedRow != -1) {
+    if (self.tableView.selectedRow == -1) {
+        
+        self.canProceed = NO;
+        
+    }
+    
+    else {
         
         // get interface for row...
         
         self.selectedInterface = _interfaces[self.tableView.selectedRow];
+        
+        [WFCStore sharedStore].selectedInterface = self.selectedInterface;
+        
+        self.canProceed = YES;
     }
 }
 
