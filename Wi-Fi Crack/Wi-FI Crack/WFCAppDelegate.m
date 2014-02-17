@@ -30,7 +30,7 @@
     _crackVC = [[WFCCrackViewController alloc] init];
     
     // load initial VC
-    self.visibleVC = (NSViewController *)self.interfaceVC;
+    self.visibleVC = (WFCProceedViewController *)self.interfaceVC;
     
     // KVO
     [self addObserver:self
@@ -38,6 +38,10 @@
               options:NSKeyValueObservingOptionInitial
               context:nil];
     
+    [self addObserver:self
+           forKeyPath:@"visibleVC.canProceed"
+              options:NSKeyValueObservingOptionNew
+              context:nil];
     
 }
 
@@ -47,6 +51,8 @@
     [self removeObserver:self
               forKeyPath:@"visibleVC"];
     
+    [self removeObserver:self
+              forKeyPath:@"visibleVC.canProceed"];
 }
 
 -(BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
@@ -72,21 +78,21 @@
 
 - (IBAction)next:(id)sender {
     
-    if (self.visibleVC == (NSViewController *)self.interfaceVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.interfaceVC) {
         
         self.visibleVC = self.networkVC;
         
         self.backButton.hidden = NO;
     }
     
-    if (self.visibleVC == (NSViewController *)self.networkVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.networkVC) {
         
-        self.visibleVC = (NSViewController *)self.captureVC;
+        self.visibleVC = (WFCProceedViewController *)self.captureVC;
     }
     
     if (self.visibleVC == (NSViewController *)self.captureVC) {
         
-        self.visibleVC = (NSViewController *)self.crackVC;
+        self.visibleVC = (WFCProceedViewController *)self.crackVC;
         
     }
     
@@ -94,20 +100,20 @@
 
 - (IBAction)back:(id)sender {
     
-    if (self.visibleVC == (NSViewController *)self.crackVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.crackVC) {
         
-        self.visibleVC = (NSViewController *)self.captureVC;
+        self.visibleVC = (WFCProceedViewController *)self.captureVC;
     }
     
-    if (self.visibleVC == (NSViewController *)self.captureVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.captureVC) {
         
-        self.visibleVC = (NSViewController *)self.networkVC;
+        self.visibleVC = (WFCProceedViewController *)self.networkVC;
         
     }
     
-    if (self.visibleVC == (NSViewController *)self.networkVC) {
+    if (self.visibleVC == (WFCProceedViewController *)self.networkVC) {
         
-        self.visibleVC = (NSViewController *)self.interfaceVC;
+        self.visibleVC = (WFCProceedViewController *)self.interfaceVC;
         
         self.backButton.hidden = YES;
     }
@@ -125,6 +131,10 @@
         self.box.title = self.visibleVC.title;
     }
     
+    if ([keyPath isEqualToString:@"visibleVC.canProceed"]) {
+        
+        self.nextButton.enabled = self.visibleVC.canProceed;
+    }
 }
 
 @end

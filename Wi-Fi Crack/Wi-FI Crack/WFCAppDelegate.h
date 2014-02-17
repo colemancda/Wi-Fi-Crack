@@ -7,7 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-@class WFCNetworkSelectionViewController, WFCInterfaceSelectionViewController, WFCCaptureViewController, WFCCrackViewController;
+@class WFCNetworkSelectionViewController, WFCInterfaceSelectionViewController, WFCCaptureViewController, WFCCrackViewController, WFCProceedViewController;
 
 @interface WFCAppDelegate : NSObject <NSApplicationDelegate>
 
@@ -21,7 +21,7 @@
 
 #pragma mark - View Controllers
 
-@property NSViewController *visibleVC;
+@property WFCProceedViewController *visibleVC;
 
 @property (readonly) WFCInterfaceSelectionViewController *interfaceVC;
 

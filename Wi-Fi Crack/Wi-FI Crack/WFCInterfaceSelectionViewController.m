@@ -13,6 +13,8 @@
 
 @property NSArray *interfaces;
 
+@property CWInterface *selectedInterface;
+
 @end
 
 @implementation WFCInterfaceSelectionViewController
@@ -132,8 +134,12 @@
 
 -(void)tableViewSelectionDidChange:(NSNotification *)notification
 {
-    
-    
+    if (self.tableView.selectedRow != -1) {
+        
+        // get interface for row...
+        
+        self.selectedInterface = _interfaces[self.tableView.selectedRow];
+    }
 }
 
 @end

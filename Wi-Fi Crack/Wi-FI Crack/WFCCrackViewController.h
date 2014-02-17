@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WFCProceedViewController.h"
 
-@interface WFCCrackViewController : NSViewController
+@interface WFCCrackViewController : WFCProceedViewController
 
 @end

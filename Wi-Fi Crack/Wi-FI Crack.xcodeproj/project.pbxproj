@@ -28,6 +28,7 @@
 		6E46F02318B1A0980065D5D0 /* WFCCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F02118B1A0980065D5D0 /* WFCCaptureViewController.xib */; };
 		6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02518B1A0A90065D5D0 /* WFCCrackViewController.m */; };
 		6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */; };
+		6E46F02B18B1BA390065D5D0 /* WFCProceedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		6E46F02418B1A0A90065D5D0 /* WFCCrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCCrackViewController.h; sourceTree = "<group>"; };
 		6E46F02518B1A0A90065D5D0 /* WFCCrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCCrackViewController.m; sourceTree = "<group>"; };
 		6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCCrackViewController.xib; sourceTree = "<group>"; };
+		6E46F02918B1BA390065D5D0 /* WFCProceedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCProceedViewController.h; sourceTree = "<group>"; };
+		6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCProceedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,8 @@
 		6E46F01518B19B620065D5D0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6E46F02918B1BA390065D5D0 /* WFCProceedViewController.h */,
+				6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */,
 				6E46F01618B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.h */,
 				6E46F01718B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m */,
 				6E46F01818B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib */,
@@ -328,6 +333,7 @@
 				6E46F02218B1A0980065D5D0 /* WFCCaptureViewController.m in Sources */,
 				6E46EFED18B19A330065D5D0 /* WFCAppDelegate.m in Sources */,
 				6E46F01918B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m in Sources */,
+				6E46F02B18B1BA390065D5D0 /* WFCProceedViewController.m in Sources */,
 				6E46F01218B19B530065D5D0 /* WFCNetworkSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

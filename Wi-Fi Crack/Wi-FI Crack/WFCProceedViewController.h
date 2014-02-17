@@ -1,5 +1,5 @@
 //
-//  WFCCaptureViewController.h
+//  WFCProceedViewController.h
 //  Wi-Fi Crack
 //
 //  Created by Alsey Coleman Miller on 2/16/14.
@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "WFCProceedViewController.h"
 
-@interface WFCCaptureViewController : WFCProceedViewController
+@interface WFCProceedViewController : NSViewController
+
+@property (readonly) BOOL canProceed;
 
 @end

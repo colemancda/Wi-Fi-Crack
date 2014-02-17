@@ -7,8 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WFCProceedViewController.h"
 
-@interface WFCNetworkSelectionViewController : NSViewController
+@interface WFCNetworkSelectionViewController : WFCProceedViewController
 
 -(IBAction)scan:(id)sender;
 

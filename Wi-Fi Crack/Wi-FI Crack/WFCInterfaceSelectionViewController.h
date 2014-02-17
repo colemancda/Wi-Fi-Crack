@@ -7,9 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WFCProceedViewController.h"
 @class CWInterface;
 
-@interface WFCInterfaceSelectionViewController : NSViewController <NSTableViewDataSource, NSTableViewDelegate>
+@interface WFCInterfaceSelectionViewController : WFCProceedViewController <NSTableViewDataSource, NSTableViewDelegate>
 
 @property (readonly) NSArray *interfaces;
 
