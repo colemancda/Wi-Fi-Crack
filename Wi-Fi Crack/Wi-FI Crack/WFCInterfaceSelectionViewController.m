@@ -32,6 +32,7 @@
     if (self) {
         // Initialization code here.
         
+        self.title = NSLocalizedString(@"Interface Selection", @"Interface Selection");
         
     }
     return self;
@@ -78,6 +79,71 @@
 
 #pragma mark - Table View Data Source
 
+-(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
+{
+    return self.interfaces.count;
+}
 
+#pragma mark - Table View Delegate
+
+-(NSView *)tableView:(NSTableView *)tableView
+  viewForTableColumn:(NSTableColumn *)tableColumn
+                 row:(NSInteger)row
+{
+    // get resusable view
+    NSView *view = [self.tableView makeViewWithIdentifier:tableColumn.identifier
+                                                    owner:self];
+    
+    // get model object
+    CWInterface *interface = _interfaces[row];
+    
+    // configure view
+    
+    if ([tableColumn.identifier isEqualToString:@"name"]) {
+        
+        NSTableCellView *cellView = (NSTableCellView *)view;
+        
+        cellView.textField.stringValue = interface.interfaceName;
+        
+    }
+    
+    if ([tableColumn.identifier isEqualToString:@"macAddress"]) {
+        
+        NSTableCellView *cellView = (NSTableCellView *)view;
+        
+        cellView.textField.stringValue = interface.hardwareAddress;
+        
+    }
+    
+    if ([tableColumn.identifier isEqualToString:@"powerOn"]) {
+        
+        NSButton *checkBox = (NSButton *)view;
+        
+        checkBox.integerValue = interface.powerOn;
+        
+    }
+    
+    if ([tableColumn.identifier isEqualToString:@"hardwareAttached"]) {
+        
+        NSButton *checkBox = (NSButton *)view;
+        
+        checkBox.integerValue = interface.deviceAttached;
+    }
+    
+    if ([tableColumn.identifier isEqualToString:@"active"]) {
+        
+        NSButton *checkBox = (NSButton *)view;
+        
+        checkBox.integerValue = interface.serviceActive;
+    }
+    
+    return view;
+}
+
+-(void)tableViewSelectionDidChange:(NSNotification *)notification
+{
+    
+    
+}
 
 @end

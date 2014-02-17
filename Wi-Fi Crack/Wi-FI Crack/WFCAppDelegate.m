@@ -9,6 +9,9 @@
 #import "WFCAppDelegate.h"
 #import "WFCInterfaceSelectionViewController.h"
 #import "WFCNetworkSelectionViewController.h"
+#import "WFCCaptureViewController.h"
+#import "WFCCrackViewController.h"
+#import "WFCStore.h"
 
 @implementation WFCAppDelegate
 
@@ -22,15 +25,19 @@
     
     _networkVC = [[WFCNetworkSelectionViewController alloc] init];
     
+    _captureVC = [[WFCCaptureViewController alloc] init];
+    
+    _crackVC = [[WFCCrackViewController alloc] init];
+    
+    // load initial VC
+    self.visibleVC = (NSViewController *)self.interfaceVC;
+    
     // KVO
     [self addObserver:self
            forKeyPath:@"visibleVC"
               options:NSKeyValueObservingOptionInitial
               context:nil];
     
-    // load initial VC
-    
-    self.visibleVC = (NSViewController *)self.interfaceVC;
     
 }
 
@@ -42,21 +49,68 @@
     
 }
 
+-(BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag
+{
+    [self.window makeKeyAndOrderFront:nil];
+    
+    return YES;
+}
+
+-(BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    // dont exit if the app is cracking or capturing
+    if ([WFCStore sharedStore].isCapturing ||
+        [WFCStore sharedStore].isCracking) {
+        
+        return NO;
+    }
+    
+    return YES;
+}
+
 #pragma mark - Actions
 
-- (IBAction)back:(id)sender {
+- (IBAction)next:(id)sender {
     
-    if (self.visibleVC == self.networkVC) {
+    if (self.visibleVC == (NSViewController *)self.interfaceVC) {
         
+        self.visibleVC = self.networkVC;
+        
+        self.backButton.hidden = NO;
+    }
+    
+    if (self.visibleVC == (NSViewController *)self.networkVC) {
+        
+        self.visibleVC = (NSViewController *)self.captureVC;
+    }
+    
+    if (self.visibleVC == (NSViewController *)self.captureVC) {
+        
+        self.visibleVC = (NSViewController *)self.crackVC;
         
     }
     
 }
 
-- (IBAction)next:(id)sender {
+- (IBAction)back:(id)sender {
     
+    if (self.visibleVC == (NSViewController *)self.crackVC) {
+        
+        self.visibleVC = (NSViewController *)self.captureVC;
+    }
     
+    if (self.visibleVC == (NSViewController *)self.captureVC) {
+        
+        self.visibleVC = (NSViewController *)self.networkVC;
+        
+    }
     
+    if (self.visibleVC == (NSViewController *)self.networkVC) {
+        
+        self.visibleVC = (NSViewController *)self.interfaceVC;
+        
+        self.backButton.hidden = YES;
+    }
 }
 
 #pragma mark - KVO

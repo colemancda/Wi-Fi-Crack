@@ -14,11 +14,22 @@
 
 @implementation WFCCrackViewController
 
+- (id)init
+{
+    self = [self initWithNibName:NSStringFromClass([self class]) bundle:nil];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Initialization code here.
+        
+        self.title = NSLocalizedString(@"Crack", @"Crack");
     }
     return self;
 }

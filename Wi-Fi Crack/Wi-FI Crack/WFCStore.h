@@ -19,6 +19,10 @@
 
 @property (readonly) NSArray *allInterfaces;
 
+@property (readonly) BOOL isCapturing;
+
+@property (readonly) BOOL isCracking;
+
 -(NSArray *)allNetworks:(NSError **)error;
 
 #pragma mark

@@ -34,13 +34,13 @@
     
     [interfaces addObject:defaultInterface];
     
-    for (CWInterface *interface in [CWInterface interfaceNames]) {
+    for (NSString *interfaceName in [CWInterface interfaceNames]) {
         
         // add other interfaces
         
-        if (![interface.interfaceName isEqualToString:defaultInterface.interfaceName]) {
+        if (![interfaceName isEqualToString:defaultInterface.interfaceName]) {
             
-            [interfaces addObject:interface];
+            [interfaces addObject:[CWInterface interfaceWithName:interfaceName]];
         }
     }
     
@@ -53,7 +53,7 @@
 {
     NSAssert(self.selectedInterface, @"Must have an interface to scan WLAN");
     
-    NSSet *networks = [self.selectedInterface scanForNetworksWithName:nil
+    NSSet *networkSet = [self.selectedInterface scanForNetworksWithName:nil
                                                                 error:error];
     
     if (error) {
@@ -61,7 +61,17 @@
         return nil;
     }
     
-    return networks.allObjects;
+    NSMutableArray *wepNetworks = [[NSMutableArray alloc] init];
+    
+    for (CWNetwork *network in networkSet) {
+        
+        if ([network supportsSecurity:kCWSecurityWEP]) {
+            
+            [wepNetworks addObject:network];
+        }
+    }
+    
+    return [NSArray arrayWithArray:wepNetworks];
 }
 
 @end
