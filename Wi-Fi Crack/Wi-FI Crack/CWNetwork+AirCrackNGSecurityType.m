@@ -1,60 +1,59 @@
 //
-//  CWNetwork+security.m
+//  CWNetwork+AirCrackNGSecurityType.m
 //  Wi-Fi Crack
 //
-//  Created by Alsey Coleman Miller on 11/6/12.
-//  Copyright (c) 2012 ColemanCDA. All rights reserved.
+//  Created by Alsey Coleman Miller on 2/17/14.
+//  Copyright (c) 2014 ColemanCDA. All rights reserved.
 //
 
-#import "CWNetwork+security.h"
+#import "CWNetwork+AirCrackNGSecurityType.h"
 
-@implementation CWNetwork (security)
+@implementation CWNetwork (AirCrackNGSecurityType)
 
--(NSString *)security
+-(WFCAirCrackNGSecurityType)aircrackSecurityType
 {
     // if WEP network
     if ([self supportsSecurity:kCWSecurityWEP]) {
-        return @"WEP";
+        return 1;
     }
     // if Dynamic WEP
     if ([self supportsSecurity:kCWSecurityDynamicWEP]) {
-        return @"Dynamic WEP";
+        return 1;
     }
     // if no security
     if ([self supportsSecurity:kCWSecurityNone]) {
-        return @"None";
+        return 0;
     }
     // if WPA Personal
     if ([self supportsSecurity:kCWSecurityWPAPersonal]) {
-        return @"WPA Personal";
+        return 2;
     }
     // if WPA2 Personal
     if ([self supportsSecurity:kCWSecurityWPA2Personal]) {
-        return @"WPA2 Personal";
+        return 2;
     }
     // if WPA Enterprise
     if ([self supportsSecurity:kCWSecurityWPA2Enterprise]) {
-        return @"WPA Enterprise";
+        return 2;
     }
     // if WPA2 Enterprise
     if ([self supportsSecurity:kCWSecurityWPA2Enterprise]) {
-        return @"WPA2 Enterprise";
+        return 2;
     }
     // if WPA Personal Mixed
     if ([self supportsSecurity:kCWSecurityWPAPersonalMixed]) {
-        return @"WPA Personal Mixed";
+        return 2;
     }
     // if WPA Enterprise Mixed
     if ([self supportsSecurity:kCWSecurityWPAEnterpriseMixed]) {
-        return @"Enterprise Mixed";
+        return 2;
     }
     // if Uknown
     if ([self supportsSecurity:kCWSecurityUnknown]) {
-        return @"Uknown";
+        return 0;
     }
     
-    else return @"?";
-
+    else return 0;
 }
 
 @end

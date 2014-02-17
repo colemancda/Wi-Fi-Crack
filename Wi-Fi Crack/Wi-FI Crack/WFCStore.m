@@ -7,6 +7,7 @@
 //
 
 #import "WFCStore.h"
+#import "CWNetwork+AirCrackNGSecurityType.h"
 
 @implementation WFCStore
 
@@ -72,7 +73,6 @@
         return nil;
     }
     
-    /*
      
     // Only WEP networks
     
@@ -89,10 +89,6 @@
     }
     
     return [NSArray arrayWithArray:wepNetworks];
-     
-     */
-    
-    return networkSet.allObjects;
 }
 
 -(void)startCapture
@@ -120,8 +116,22 @@
 
 -(void)startCrack
 {
+    // only WEP for now
     
+    // get the path
+    NSString *path = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"aircrack-ng"];
     
+    // launch 'aircrack-ng' in terminal
+    NSString *script = [NSString stringWithFormat:
+                        @"tell application \"Terminal\"\n activate \ndo script \"\\\"%@\\\" -a %lu -b %@ /private/tmp/airportSniff*.cap\"\n end tell", path, self.selectedNetwork.aircrackSecurityType, self.selectedNetwork.bssid];
+    
+    NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
+    
+    [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+        
+        [appleScript executeAndReturnError:nil];
+        
+    }];
 }
 
 @end

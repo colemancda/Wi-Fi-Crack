@@ -30,6 +30,8 @@
 		6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */; };
 		6E46F02B18B1BA390065D5D0 /* WFCProceedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */; };
 		6E46F03018B1C6750065D5D0 /* CWNetwork+SecurityDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02F18B1C6750065D5D0 /* CWNetwork+SecurityDescription.m */; };
+		6E46F05718B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F05618B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.m */; };
+		6E46F05918B1E7980065D5D0 /* aircrack-ng in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F05818B1E7980065D5D0 /* aircrack-ng */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,9 @@
 		6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCProceedViewController.m; sourceTree = "<group>"; };
 		6E46F02E18B1C6750065D5D0 /* CWNetwork+SecurityDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CWNetwork+SecurityDescription.h"; sourceTree = "<group>"; };
 		6E46F02F18B1C6750065D5D0 /* CWNetwork+SecurityDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CWNetwork+SecurityDescription.m"; sourceTree = "<group>"; };
+		6E46F05518B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CWNetwork+AirCrackNGSecurityType.h"; sourceTree = "<group>"; };
+		6E46F05618B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CWNetwork+AirCrackNGSecurityType.m"; sourceTree = "<group>"; };
+		6E46F05818B1E7980065D5D0 /* aircrack-ng */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "aircrack-ng"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +168,7 @@
 		6E46EFE018B19A330065D5D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6E46F05818B1E7980065D5D0 /* aircrack-ng */,
 				6E46EFE118B19A330065D5D0 /* Wi-Fi Crack-Info.plist */,
 				6E46EFE218B19A330065D5D0 /* InfoPlist.strings */,
 				6E46EFE518B19A330065D5D0 /* main.m */,
@@ -241,6 +247,8 @@
 			children = (
 				6E46F02E18B1C6750065D5D0 /* CWNetwork+SecurityDescription.h */,
 				6E46F02F18B1C6750065D5D0 /* CWNetwork+SecurityDescription.m */,
+				6E46F05518B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.h */,
+				6E46F05618B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -327,6 +335,7 @@
 				6E46EFE418B19A330065D5D0 /* InfoPlist.strings in Resources */,
 				6E46EFF218B19A330065D5D0 /* Images.xcassets in Resources */,
 				6E46F01318B19B530065D5D0 /* WFCNetworkSelectionViewController.xib in Resources */,
+				6E46F05918B1E7980065D5D0 /* aircrack-ng in Resources */,
 				6E46EFEA18B19A330065D5D0 /* Credits.rtf in Resources */,
 				6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */,
 				6E46EFF018B19A330065D5D0 /* MainMenu.xib in Resources */,
@@ -351,6 +360,7 @@
 				6E46F03018B1C6750065D5D0 /* CWNetwork+SecurityDescription.m in Sources */,
 				6E46EFE618B19A330065D5D0 /* main.m in Sources */,
 				6E46F01D18B1A05A0065D5D0 /* WFCStore.m in Sources */,
+				6E46F05718B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.m in Sources */,
 				6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */,
 				6E46F02218B1A0980065D5D0 /* WFCCaptureViewController.m in Sources */,
 				6E46EFED18B19A330065D5D0 /* WFCAppDelegate.m in Sources */,

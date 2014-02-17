@@ -12,6 +12,8 @@
 	<dict>
 		<key>44596415-1832-4030-930F-288DB92AD610</key>
 		<string>https://github.com/colemancda/Wi-Fi-Crack.git</string>
+		<key>5EDFF449-8FC3-4C0C-9D3E-EA4CAED4D097</key>
+		<string>https://github.com/aircrack-ng/aircrack-ng.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Wi-Fi Crack/Wi-Fi Crack.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>44596415-1832-4030-930F-288DB92AD610</key>
 		<string>../../..</string>
+		<key>5EDFF449-8FC3-4C0C-9D3E-EA4CAED4D097</key>
+		<string>../../../../../3rd party projects/aircrack-ng</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/colemancda/Wi-Fi-Crack.git</string>
@@ -28,6 +32,14 @@
 	<string>44596415-1832-4030-930F-288DB92AD610</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5EDFF449-8FC3-4C0C-9D3E-EA4CAED4D097</string>
+			<key>IDESourceControlWCCName</key>
+			<string>aircrack-ng</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
