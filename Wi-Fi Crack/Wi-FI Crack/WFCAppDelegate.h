@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class WFCNetworkSelectionViewController, WFCInterfaceSelectionViewController, WFCCaptureViewController, WFCCrackViewController;
 
 @interface WFCAppDelegate : NSObject <NSApplicationDelegate>
 
@@ -18,11 +19,24 @@
 
 @property (weak) IBOutlet NSButton *nextButton;
 
+#pragma mark - View Controllers
+
+@property NSViewController *visibleVC;
+
+@property (readonly) WFCInterfaceSelectionViewController *interfaceVC;
+
+@property (readonly) WFCNetworkSelectionViewController *networkVC;
+
+@property (readonly) WFCCaptureViewController *captureVC;
+
+@property (readonly) WFCCrackViewController *crackVC;
+
 #pragma mark - Actions
 
 - (IBAction)back:(id)sender;
 
 - (IBAction)next:(id)sender;
+
 
 
 @end

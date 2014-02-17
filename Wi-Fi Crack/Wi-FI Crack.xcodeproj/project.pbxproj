@@ -21,6 +21,13 @@
 		6E46F00E18B19A440065D5D0 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E46F00D18B19A440065D5D0 /* CoreWLAN.framework */; };
 		6E46F01218B19B530065D5D0 /* WFCNetworkSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F01018B19B530065D5D0 /* WFCNetworkSelectionViewController.m */; };
 		6E46F01318B19B530065D5D0 /* WFCNetworkSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F01118B19B530065D5D0 /* WFCNetworkSelectionViewController.xib */; };
+		6E46F01918B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F01718B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m */; };
+		6E46F01A18B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F01818B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib */; };
+		6E46F01D18B1A05A0065D5D0 /* WFCStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F01C18B1A05A0065D5D0 /* WFCStore.m */; };
+		6E46F02218B1A0980065D5D0 /* WFCCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02018B1A0980065D5D0 /* WFCCaptureViewController.m */; };
+		6E46F02318B1A0980065D5D0 /* WFCCaptureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F02118B1A0980065D5D0 /* WFCCaptureViewController.xib */; };
+		6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02518B1A0A90065D5D0 /* WFCCrackViewController.m */; };
+		6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,17 @@
 		6E46F00F18B19B530065D5D0 /* WFCNetworkSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCNetworkSelectionViewController.h; sourceTree = "<group>"; };
 		6E46F01018B19B530065D5D0 /* WFCNetworkSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCNetworkSelectionViewController.m; sourceTree = "<group>"; };
 		6E46F01118B19B530065D5D0 /* WFCNetworkSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCNetworkSelectionViewController.xib; sourceTree = "<group>"; };
+		6E46F01618B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCInterfaceSelectionViewController.h; sourceTree = "<group>"; };
+		6E46F01718B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCInterfaceSelectionViewController.m; sourceTree = "<group>"; };
+		6E46F01818B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCInterfaceSelectionViewController.xib; sourceTree = "<group>"; };
+		6E46F01B18B1A05A0065D5D0 /* WFCStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCStore.h; sourceTree = "<group>"; };
+		6E46F01C18B1A05A0065D5D0 /* WFCStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCStore.m; sourceTree = "<group>"; };
+		6E46F01F18B1A0980065D5D0 /* WFCCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCCaptureViewController.h; sourceTree = "<group>"; };
+		6E46F02018B1A0980065D5D0 /* WFCCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCCaptureViewController.m; sourceTree = "<group>"; };
+		6E46F02118B1A0980065D5D0 /* WFCCaptureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCCaptureViewController.xib; sourceTree = "<group>"; };
+		6E46F02418B1A0A90065D5D0 /* WFCCrackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCCrackViewController.h; sourceTree = "<group>"; };
+		6E46F02518B1A0A90065D5D0 /* WFCCrackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCCrackViewController.m; sourceTree = "<group>"; };
+		6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCCrackViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +146,7 @@
 				6E46EFEC18B19A330065D5D0 /* WFCAppDelegate.m */,
 				6E46EFEE18B19A330065D5D0 /* MainMenu.xib */,
 				6E46EFF118B19A330065D5D0 /* Images.xcassets */,
+				6E46F01E18B1A05E0065D5D0 /* Store */,
 				6E46F01418B19B570065D5D0 /* Controllers */,
 				6E46EFE018B19A330065D5D0 /* Supporting Files */,
 			);
@@ -175,11 +194,29 @@
 		6E46F01518B19B620065D5D0 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6E46F01618B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.h */,
+				6E46F01718B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m */,
+				6E46F01818B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib */,
 				6E46F00F18B19B530065D5D0 /* WFCNetworkSelectionViewController.h */,
 				6E46F01018B19B530065D5D0 /* WFCNetworkSelectionViewController.m */,
 				6E46F01118B19B530065D5D0 /* WFCNetworkSelectionViewController.xib */,
+				6E46F01F18B1A0980065D5D0 /* WFCCaptureViewController.h */,
+				6E46F02018B1A0980065D5D0 /* WFCCaptureViewController.m */,
+				6E46F02118B1A0980065D5D0 /* WFCCaptureViewController.xib */,
+				6E46F02418B1A0A90065D5D0 /* WFCCrackViewController.h */,
+				6E46F02518B1A0A90065D5D0 /* WFCCrackViewController.m */,
+				6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		6E46F01E18B1A05E0065D5D0 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6E46F01B18B1A05A0065D5D0 /* WFCStore.h */,
+				6E46F01C18B1A05A0065D5D0 /* WFCStore.m */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,10 +296,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E46F01A18B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib in Resources */,
+				6E46F02318B1A0980065D5D0 /* WFCCaptureViewController.xib in Resources */,
 				6E46EFE418B19A330065D5D0 /* InfoPlist.strings in Resources */,
 				6E46EFF218B19A330065D5D0 /* Images.xcassets in Resources */,
 				6E46F01318B19B530065D5D0 /* WFCNetworkSelectionViewController.xib in Resources */,
 				6E46EFEA18B19A330065D5D0 /* Credits.rtf in Resources */,
+				6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */,
 				6E46EFF018B19A330065D5D0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E46EFE618B19A330065D5D0 /* main.m in Sources */,
+				6E46F01D18B1A05A0065D5D0 /* WFCStore.m in Sources */,
+				6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */,
+				6E46F02218B1A0980065D5D0 /* WFCCaptureViewController.m in Sources */,
 				6E46EFED18B19A330065D5D0 /* WFCAppDelegate.m in Sources */,
+				6E46F01918B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m in Sources */,
 				6E46F01218B19B530065D5D0 /* WFCNetworkSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
