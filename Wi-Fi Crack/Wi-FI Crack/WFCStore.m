@@ -56,7 +56,7 @@
     NSSet *networkSet = [self.selectedInterface scanForNetworksWithName:nil
                                                                 error:error];
     
-    if (error) {
+    if (*error) {
         
         return nil;
     }

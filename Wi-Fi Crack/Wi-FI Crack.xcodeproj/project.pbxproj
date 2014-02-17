@@ -29,6 +29,7 @@
 		6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02518B1A0A90065D5D0 /* WFCCrackViewController.m */; };
 		6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */; };
 		6E46F02B18B1BA390065D5D0 /* WFCProceedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */; };
+		6E46F03018B1C6750065D5D0 /* CWNetwork+SecurityDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46F02F18B1C6750065D5D0 /* CWNetwork+SecurityDescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		6E46F02618B1A0A90065D5D0 /* WFCCrackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WFCCrackViewController.xib; sourceTree = "<group>"; };
 		6E46F02918B1BA390065D5D0 /* WFCProceedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFCProceedViewController.h; sourceTree = "<group>"; };
 		6E46F02A18B1BA390065D5D0 /* WFCProceedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFCProceedViewController.m; sourceTree = "<group>"; };
+		6E46F02E18B1C6750065D5D0 /* CWNetwork+SecurityDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CWNetwork+SecurityDescription.h"; sourceTree = "<group>"; };
+		6E46F02F18B1C6750065D5D0 /* CWNetwork+SecurityDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CWNetwork+SecurityDescription.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,7 @@
 				6E46EFEC18B19A330065D5D0 /* WFCAppDelegate.m */,
 				6E46EFEE18B19A330065D5D0 /* MainMenu.xib */,
 				6E46EFF118B19A330065D5D0 /* Images.xcassets */,
+				6E46F02C18B1C6380065D5D0 /* Model */,
 				6E46F01E18B1A05E0065D5D0 /* Store */,
 				6E46F01418B19B570065D5D0 /* Controllers */,
 				6E46EFE018B19A330065D5D0 /* Supporting Files */,
@@ -222,6 +226,23 @@
 				6E46F01C18B1A05A0065D5D0 /* WFCStore.m */,
 			);
 			name = Store;
+			sourceTree = "<group>";
+		};
+		6E46F02C18B1C6380065D5D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E46F02D18B1C63D0065D5D0 /* Categories */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6E46F02D18B1C63D0065D5D0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6E46F02E18B1C6750065D5D0 /* CWNetwork+SecurityDescription.h */,
+				6E46F02F18B1C6750065D5D0 /* CWNetwork+SecurityDescription.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E46F03018B1C6750065D5D0 /* CWNetwork+SecurityDescription.m in Sources */,
 				6E46EFE618B19A330065D5D0 /* main.m in Sources */,
 				6E46F01D18B1A05A0065D5D0 /* WFCStore.m in Sources */,
 				6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */,

@@ -25,7 +25,7 @@
                         <rect key="frame" x="1" y="17" width="581" height="281"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="JCy-V1-qoP" viewBased="YES" id="RMt-f7-yUH">
+                            <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="sequential" alternatingRowBackgroundColors="YES" columnSelection="YES" multipleSelection="NO" autosaveName="InterfacesTableView" headerView="JCy-V1-qoP" viewBased="YES" id="RMt-f7-yUH">
                                 <rect key="frame" x="0.0" y="0.0" width="581" height="281"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <size key="intercellSpacing" width="3" height="2"/>
