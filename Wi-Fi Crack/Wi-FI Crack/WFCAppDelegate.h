@@ -37,6 +37,6 @@
 
 - (IBAction)next:(id)sender;
 
-
+- (void)finish:(id)sender;
 
 @end

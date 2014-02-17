@@ -39,6 +39,8 @@
 {
     [[WFCStore sharedStore] startCrack];
     
+    self.canProceed = YES;
+    
 }
 
 @end

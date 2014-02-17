@@ -97,21 +97,25 @@
 
 -(void)startCapture
 {
-    if (!self.selectedInterface || self.selectedNetwork) {
+    if (!self.selectedInterface || !self.selectedNetwork) {
         
         [NSException raise:NSInternalInconsistencyException
                     format:@"Must have an interface and network to capture packets"];
     }
     
-    // launch 'airport' in terminal
-    NSString *script = [NSString stringWithFormat:
-                        @"tell application \"Terminal\"\n activate \ndo script \"sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport %@ sniff %ld\"\n end tell",
-                        self.selectedInterface.interfaceName,
-                        self.selectedNetwork.wlanChannel.channelNumber];
-    
-    NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
-    
-    [appleScript executeAndReturnError:nil];
+    [[[NSOperationQueue alloc] init] addOperationWithBlock:^{
+        
+        // launch 'airport' in terminal
+        NSString *script = [NSString stringWithFormat:
+                            @"tell application \"Terminal\"\n activate \ndo script \"sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport %@ sniff %ld\"\n end tell",
+                            self.selectedInterface.interfaceName,
+                            self.selectedNetwork.wlanChannel.channelNumber];
+        
+        NSAppleScript *appleScript = [[NSAppleScript alloc] initWithSource:script];
+        
+        [appleScript executeAndReturnError:nil];
+        
+    }];
 }
 
 -(void)startCrack

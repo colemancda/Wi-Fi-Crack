@@ -81,6 +81,12 @@
     if (self.visibleVC == (WFCProceedViewController *)self.captureVC) {
         
         self.visibleVC = (WFCProceedViewController *)self.crackVC;
+        
+        // put finish button
+        
+        self.nextButton.action = @selector(finish:);
+        
+        self.nextButton.title = NSLocalizedString(@"Finish", @"Finish");
     }
     
     if (self.visibleVC == (WFCProceedViewController *)self.networkVC) {
@@ -116,9 +122,20 @@
     if (self.visibleVC == (WFCProceedViewController *)self.crackVC) {
         
         self.visibleVC = (WFCProceedViewController *)self.captureVC;
+        
+        // reset next button
+        
+        self.nextButton.action = @selector(next:);
+        
+        self.nextButton.title = NSLocalizedString(@"Next", @"Next");
     }
     
     
+}
+
+-(void)finish:(id)sender
+{
+    [NSApp terminate:nil];
 }
 
 #pragma mark - KVO

@@ -150,7 +150,6 @@
     if (self.tableView.selectedRow == -1) {
         
         self.canProceed = NO;
-        
     }
     
     else {

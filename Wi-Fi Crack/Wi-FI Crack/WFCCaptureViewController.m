@@ -39,6 +39,8 @@
     
     [[WFCStore sharedStore] startCapture];
     
+    self.canProceed = YES;
+    
 }
 
 
