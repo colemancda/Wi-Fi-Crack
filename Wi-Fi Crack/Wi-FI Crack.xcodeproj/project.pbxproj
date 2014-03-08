@@ -45,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E105BE518CBD16100603C18 /* aircrack-ng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "aircrack-ng.xcodeproj"; path = "../../../3rd party projects/aircrack-ng/aircrack-ng.xcodeproj"; sourceTree = "<group>"; };
+		6E105BE918CBD1A400603C18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6E46EFD618B19A330065D5D0 /* Wi-Fi Crack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wi-Fi Crack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E46EFD918B19A330065D5D0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6E46EFDC18B19A330065D5D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -57,7 +59,6 @@
 		6E46EFE918B19A330065D5D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		6E46EFEB18B19A330065D5D0 /* WFCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFCAppDelegate.h; sourceTree = "<group>"; };
 		6E46EFEC18B19A330065D5D0 /* WFCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFCAppDelegate.m; sourceTree = "<group>"; };
-		6E46EFEF18B19A330065D5D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6E46EFF118B19A330065D5D0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6E46EFF718B19A340065D5D0 /* Wi-Fi CrackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wi-Fi CrackTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E46EFF818B19A340065D5D0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -110,6 +111,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E105BE618CBD16100603C18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6E46EFCD18B19A330065D5D0 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +140,7 @@
 		6E46EFD818B19A330065D5D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E105BE518CBD16100603C18 /* aircrack-ng.xcodeproj */,
 				6E46F00D18B19A440065D5D0 /* CoreWLAN.framework */,
 				6E46EFD918B19A330065D5D0 /* Cocoa.framework */,
 				6E46EFF818B19A340065D5D0 /* XCTest.framework */,
@@ -317,6 +326,12 @@
 			mainGroup = 6E46EFCD18B19A330065D5D0;
 			productRefGroup = 6E46EFD718B19A330065D5D0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6E105BE618CBD16100603C18 /* Products */;
+					ProjectRef = 6E105BE518CBD16100603C18 /* aircrack-ng.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6E46EFD518B19A330065D5D0 /* Wi-Fi Crack */,
@@ -408,7 +423,7 @@
 		6E46EFEE18B19A330065D5D0 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E46EFEF18B19A330065D5D0 /* Base */,
+				6E105BE918CBD1A400603C18 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -581,6 +596,7 @@
 				6E46F00918B19A340065D5D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E46F00A18B19A340065D5D0 /* Build configuration list for PBXNativeTarget "Wi-Fi CrackTests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +605,7 @@
 				6E46F00C18B19A340065D5D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
