@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1068E718CBE45700603C18 /* aircrack-ng.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E10678018CBE45700603C18 /* aircrack-ng.c */; };
+		6E1068FE18CBE45700603C18 /* darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E1067AB18CBE45700603C18 /* darwin.c */; };
+		6E1068FF18CBE45700603C18 /* darwin_tap.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E1067AC18CBE45700603C18 /* darwin_tap.c */; };
+		6E10693018CBE8A700603C18 /* aircrack-ng.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E10678018CBE45700603C18 /* aircrack-ng.c */; };
+		6E10693118CBE8F600603C18 /* aircrack-ptw-lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E10678218CBE45700603C18 /* aircrack-ptw-lib.c */; };
+		6E10693518CBE9C100603C18 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E10679018CBE45700603C18 /* common.c */; };
+		6E10693618CBE9F500603C18 /* uniqueiv.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E1067CC18CBE45700603C18 /* uniqueiv.c */; };
+		6E10693718CBEA9000603C18 /* crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E10679318CBE45700603C18 /* crypto.c */; };
 		6E46EFDA18B19A330065D5D0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E46EFD918B19A330065D5D0 /* Cocoa.framework */; };
 		6E46EFE418B19A330065D5D0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E46EFE218B19A330065D5D0 /* InfoPlist.strings */; };
 		6E46EFE618B19A330065D5D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E46EFE518B19A330065D5D0 /* main.m */; };
@@ -44,8 +52,360 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E105BE518CBD16100603C18 /* aircrack-ng.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "aircrack-ng.xcodeproj"; path = "../../../3rd party projects/aircrack-ng/aircrack-ng.xcodeproj"; sourceTree = "<group>"; };
 		6E105BE918CBD1A400603C18 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6E10666118CBE45600603C18 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		6E10666518CBE45600603C18 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		6E10666618CBE45600603C18 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		6E10666718CBE45600603C18 /* common.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = common.mak; sourceTree = "<group>"; };
+		6E10666A18CBE45600603C18 /* airpcap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = airpcap.c; sourceTree = "<group>"; };
+		6E10666B18CBE45600603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10666D18CBE45600603C18 /* commview.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = commview.c; sourceTree = "<group>"; };
+		6E10666E18CBE45600603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10667018CBE45600603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10667118CBE45600603C18 /* omnipeek.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = omnipeek.c; sourceTree = "<group>"; };
+		6E10667218CBE45600603C18 /* evalrev */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = evalrev; sourceTree = "<group>"; };
+		6E10667318CBE45600603C18 /* INSTALLING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALLING; sourceTree = "<group>"; };
+		6E10667818CBE45600603C18 /* app.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = app.config; sourceTree = "<group>"; };
+		6E10667918CBE45600603C18 /* Example1.csproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Example1.csproj; sourceTree = "<group>"; };
+		6E10667A18CBE45600603C18 /* Form1.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Form1.cs; sourceTree = "<group>"; };
+		6E10667B18CBE45600603C18 /* Form1.Designer.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Form1.Designer.cs; sourceTree = "<group>"; };
+		6E10667C18CBE45600603C18 /* Form1.resx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Form1.resx; sourceTree = "<group>"; };
+		6E10667D18CBE45600603C18 /* Program.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Program.cs; sourceTree = "<group>"; };
+		6E10667F18CBE45600603C18 /* AssemblyInfo.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssemblyInfo.cs; sourceTree = "<group>"; };
+		6E10668018CBE45600603C18 /* Resources.Designer.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Resources.Designer.cs; sourceTree = "<group>"; };
+		6E10668118CBE45600603C18 /* Resources.resx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Resources.resx; sourceTree = "<group>"; };
+		6E10668218CBE45600603C18 /* Settings.Designer.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Settings.Designer.cs; sourceTree = "<group>"; };
+		6E10668318CBE45600603C18 /* Settings.settings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Settings.settings; sourceTree = "<group>"; };
+		6E10668418CBE45600603C18 /* Example1.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Example1.sln; sourceTree = "<group>"; };
+		6E10668718CBE45600603C18 /* Address.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Address.cs; sourceTree = "<group>"; };
+		6E10668818CBE45600603C18 /* AssemblyInfo.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssemblyInfo.cs; sourceTree = "<group>"; };
+		6E10668918CBE45600603C18 /* Authentication.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Authentication.cs; sourceTree = "<group>"; };
+		6E10668A18CBE45600603C18 /* Bus.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus.cs; sourceTree = "<group>"; };
+		6E10668B18CBE45600603C18 /* BusObject.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BusObject.cs; sourceTree = "<group>"; };
+		6E10668C18CBE45600603C18 /* Connection.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Connection.cs; sourceTree = "<group>"; };
+		6E10668D18CBE45600603C18 /* DBus.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DBus.cs; sourceTree = "<group>"; };
+		6E10668E18CBE45600603C18 /* DProxy.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DProxy.cs; sourceTree = "<group>"; };
+		6E10668F18CBE45600603C18 /* ExportObject.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ExportObject.cs; sourceTree = "<group>"; };
+		6E10669018CBE45600603C18 /* Introspection.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Introspection.cs; sourceTree = "<group>"; };
+		6E10669118CBE45600603C18 /* Mapper.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mapper.cs; sourceTree = "<group>"; };
+		6E10669218CBE45600603C18 /* MatchRule.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MatchRule.cs; sourceTree = "<group>"; };
+		6E10669318CBE45600603C18 /* Message.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message.cs; sourceTree = "<group>"; };
+		6E10669418CBE45600603C18 /* MessageFilter.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MessageFilter.cs; sourceTree = "<group>"; };
+		6E10669518CBE45600603C18 /* MessageReader.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MessageReader.cs; sourceTree = "<group>"; };
+		6E10669618CBE45600603C18 /* MessageWriter.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MessageWriter.cs; sourceTree = "<group>"; };
+		6E10669718CBE45600603C18 /* NDesk-dbus.csproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "NDesk-dbus.csproj"; sourceTree = "<group>"; };
+		6E10669818CBE45600603C18 /* NDesk-dbus.pidb */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NDesk-dbus.pidb"; sourceTree = "<group>"; };
+		6E10669918CBE45600603C18 /* ndesk.snk */ = {isa = PBXFileReference; lastKnownFileType = file; path = ndesk.snk; sourceTree = "<group>"; };
+		6E10669A18CBE45600603C18 /* Notifications.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notifications.cs; sourceTree = "<group>"; };
+		6E10669B18CBE45600603C18 /* PendingCall.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PendingCall.cs; sourceTree = "<group>"; };
+		6E10669C18CBE45600603C18 /* Protocol.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Protocol.cs; sourceTree = "<group>"; };
+		6E10669D18CBE45600603C18 /* Signature.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Signature.cs; sourceTree = "<group>"; };
+		6E10669E18CBE45600603C18 /* SocketTransport.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SocketTransport.cs; sourceTree = "<group>"; };
+		6E10669F18CBE45600603C18 /* Transport.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Transport.cs; sourceTree = "<group>"; };
+		6E1066A018CBE45600603C18 /* TypeImplementer.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TypeImplementer.cs; sourceTree = "<group>"; };
+		6E1066A118CBE45600603C18 /* UnixNativeTransport.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UnixNativeTransport.cs; sourceTree = "<group>"; };
+		6E1066A218CBE45600603C18 /* UnixTransport.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UnixTransport.cs; sourceTree = "<group>"; };
+		6E1066A318CBE45600603C18 /* Wrapper.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wrapper.cs; sourceTree = "<group>"; };
+		6E1066A518CBE45600603C18 /* AssemblyInfo.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssemblyInfo.cs; sourceTree = "<group>"; };
+		6E1066A618CBE45600603C18 /* Main.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Main.cs; sourceTree = "<group>"; };
+		6E1066A718CBE45600603C18 /* NewStationNotify.csproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NewStationNotify.csproj; sourceTree = "<group>"; };
+		6E1066A818CBE45600603C18 /* NewStationNotify.pidb */ = {isa = PBXFileReference; lastKnownFileType = file; path = NewStationNotify.pidb; sourceTree = "<group>"; };
+		6E1066A918CBE45600603C18 /* Notification.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notification.cs; sourceTree = "<group>"; };
+		6E1066AA18CBE45600603C18 /* NewStationNotify.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NewStationNotify.sln; sourceTree = "<group>"; };
+		6E1066AC18CBE45600603C18 /* AccessPoint.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AccessPoint.cs; sourceTree = "<group>"; };
+		6E1066AD18CBE45600603C18 /* Coordinates.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Coordinates.cs; sourceTree = "<group>"; };
+		6E1066AF18CBE45600603C18 /* AssemblyInfo.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssemblyInfo.cs; sourceTree = "<group>"; };
+		6E1066B118CBE45600603C18 /* csvReader.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = csvReader.cs; sourceTree = "<group>"; };
+		6E1066B218CBE45600603C18 /* kismetCsvReader.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = kismetCsvReader.cs; sourceTree = "<group>"; };
+		6E1066B318CBE45600603C18 /* NetXMLReader.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NetXMLReader.cs; sourceTree = "<group>"; };
+		6E1066B418CBE45600603C18 /* Reader.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Reader.cs; sourceTree = "<group>"; };
+		6E1066B518CBE45600603C18 /* UniversalReader.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UniversalReader.cs; sourceTree = "<group>"; };
+		6E1066B618CBE45600603C18 /* Station.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Station.cs; sourceTree = "<group>"; };
+		6E1066B718CBE45600603C18 /* WirelessDevice.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WirelessDevice.cs; sourceTree = "<group>"; };
+		6E1066B818CBE45600603C18 /* WirelessPanda.csproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WirelessPanda.csproj; sourceTree = "<group>"; };
+		6E1066B918CBE45600603C18 /* WirelessPanda.Mono.csproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WirelessPanda.Mono.csproj; sourceTree = "<group>"; };
+		6E1066BA18CBE45600603C18 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6E1066BB18CBE45600603C18 /* LICENSE.OpenSSL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.OpenSSL; sourceTree = "<group>"; };
+		6E1066BC18CBE45600603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E1066BE18CBE45600603C18 /* airbase-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airbase-ng.8"; sourceTree = "<group>"; };
+		6E1066BF18CBE45600603C18 /* aircrack-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "aircrack-ng.1"; sourceTree = "<group>"; };
+		6E1066C018CBE45600603C18 /* airdecap-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "airdecap-ng.1"; sourceTree = "<group>"; };
+		6E1066C118CBE45600603C18 /* airdecloak-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "airdecloak-ng.1"; sourceTree = "<group>"; };
+		6E1066C218CBE45600603C18 /* airdriver-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airdriver-ng.8"; sourceTree = "<group>"; };
+		6E1066C318CBE45600603C18 /* aireplay-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aireplay-ng.8"; sourceTree = "<group>"; };
+		6E1066C418CBE45600603C18 /* airmon-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airmon-ng.8"; sourceTree = "<group>"; };
+		6E1066C518CBE45600603C18 /* airmon-zc.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airmon-zc.8"; sourceTree = "<group>"; };
+		6E1066C618CBE45600603C18 /* airodump-ng-oui-update.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airodump-ng-oui-update.8"; sourceTree = "<group>"; };
+		6E1066C718CBE45600603C18 /* airodump-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airodump-ng.8"; sourceTree = "<group>"; };
+		6E1066C818CBE45600603C18 /* airolib-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "airolib-ng.1"; sourceTree = "<group>"; };
+		6E1066C918CBE45600603C18 /* airserv-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airserv-ng.8"; sourceTree = "<group>"; };
+		6E1066CA18CBE45600603C18 /* airtun-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airtun-ng.8"; sourceTree = "<group>"; };
+		6E1066CB18CBE45600603C18 /* besside-ng-crawler.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "besside-ng-crawler.1"; sourceTree = "<group>"; };
+		6E1066CC18CBE45600603C18 /* besside-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "besside-ng.8"; sourceTree = "<group>"; };
+		6E1066CD18CBE45600603C18 /* buddy-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "buddy-ng.1"; sourceTree = "<group>"; };
+		6E1066CE18CBE45600603C18 /* easside-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "easside-ng.8"; sourceTree = "<group>"; };
+		6E1066CF18CBE45600603C18 /* ivstools.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = ivstools.1; sourceTree = "<group>"; };
+		6E1066D018CBE45600603C18 /* kstats.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = kstats.1; sourceTree = "<group>"; };
+		6E1066D118CBE45600603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E1066D218CBE45600603C18 /* makeivs-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "makeivs-ng.1"; sourceTree = "<group>"; };
+		6E1066D318CBE45600603C18 /* packetforge-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "packetforge-ng.1"; sourceTree = "<group>"; };
+		6E1066D418CBE45600603C18 /* tkiptun-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "tkiptun-ng.8"; sourceTree = "<group>"; };
+		6E1066D518CBE45600603C18 /* wesside-ng.8 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wesside-ng.8"; sourceTree = "<group>"; };
+		6E1066D618CBE45600603C18 /* wpaclean.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = wpaclean.1; sourceTree = "<group>"; };
+		6E1066D818CBE45600603C18 /* aircrack-ng.spec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aircrack-ng.spec"; sourceTree = "<group>"; };
+		6E1066D918CBE45600603C18 /* PKGBUILD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PKGBUILD; sourceTree = "<group>"; };
+		6E1066DA18CBE45600603C18 /* slack-desc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "slack-desc"; sourceTree = "<group>"; };
+		6E1066DC18CBE45600603C18 /* acx-20070101.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "acx-20070101.patch"; sourceTree = "<group>"; };
+		6E1066DD18CBE45600603C18 /* ar9170_regdomain_override.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ar9170_regdomain_override.patch; sourceTree = "<group>"; };
+		6E1066DE18CBE45600603C18 /* ath5k-frequency-chaos-2.6.28.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ath5k-frequency-chaos-2.6.28.patch"; sourceTree = "<group>"; };
+		6E1066DF18CBE45600603C18 /* ath5k-injection-2.6.27-rc2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ath5k-injection-2.6.27-rc2.patch"; sourceTree = "<group>"; };
+		6E1066E018CBE45600603C18 /* ath5k-pass-failed-crc.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ath5k-pass-failed-crc.patch"; sourceTree = "<group>"; };
+		6E1066E118CBE45600603C18 /* ath5k-radiotap-fragfix-2.6.28-rc8-wl.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ath5k-radiotap-fragfix-2.6.28-rc8-wl.patch"; sourceTree = "<group>"; };
+		6E1066E218CBE45600603C18 /* ath5k_regdomain_override.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ath5k_regdomain_override.patch; sourceTree = "<group>"; };
+		6E1066E318CBE45600603C18 /* ath9k_regdomain_override.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ath9k_regdomain_override.patch; sourceTree = "<group>"; };
+		6E1066E418CBE45600603C18 /* b43-injection-2.6.24.4.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "b43-injection-2.6.24.4.patch"; sourceTree = "<group>"; };
+		6E1066E518CBE45600603C18 /* b43-injection-2.6.26-rc8-wl.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "b43-injection-2.6.26-rc8-wl.patch"; sourceTree = "<group>"; };
+		6E1066E618CBE45600603C18 /* b43-injection-2.6.26-wl.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "b43-injection-2.6.26-wl.patch"; sourceTree = "<group>"; };
+		6E1066E718CBE45600603C18 /* bcm43xx-injection-linux-2.6.20.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bcm43xx-injection-linux-2.6.20.patch"; sourceTree = "<group>"; };
+		6E1066E818CBE45600603C18 /* channel-negative-one-maxim.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "channel-negative-one-maxim.patch"; sourceTree = "<group>"; };
+		6E1066E918CBE45600603C18 /* fix_ath5k_no_data_in_monitor_mode.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fix_ath5k_no_data_in_monitor_mode.patch; sourceTree = "<group>"; };
+		6E1066EA18CBE45600603C18 /* hostap-driver-0.4.7.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hostap-driver-0.4.7.patch"; sourceTree = "<group>"; };
+		6E1066EB18CBE45600603C18 /* hostap-kernel-2.6.18.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hostap-kernel-2.6.18.patch"; sourceTree = "<group>"; };
+		6E1066EC18CBE45600603C18 /* ieee80211_inject-2.6.22.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ieee80211_inject-2.6.22.patch"; sourceTree = "<group>"; };
+		6E1066ED18CBE45600603C18 /* ieee80211_inject.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ieee80211_inject.patch; sourceTree = "<group>"; };
+		6E1066EE18CBE45600603C18 /* ieee80211_softmac_adjust_bitrate.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ieee80211_softmac_adjust_bitrate.patch; sourceTree = "<group>"; };
+		6E1066EF18CBE45600603C18 /* ipw2200-1.1.4-inject.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ipw2200-1.1.4-inject.patch"; sourceTree = "<group>"; };
+		6E1066F018CBE45600603C18 /* linux-wlanng-0.2.8.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linux-wlanng-0.2.8.patch"; sourceTree = "<group>"; };
+		6E1066F118CBE45600603C18 /* linux-wlanng-kernel-2.6.28.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linux-wlanng-kernel-2.6.28.patch"; sourceTree = "<group>"; };
+		6E1066F218CBE45600603C18 /* mac80211-2.6.29-fix-tx-ctl-no-ack-retry-count.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211-2.6.29-fix-tx-ctl-no-ack-retry-count.patch"; sourceTree = "<group>"; };
+		6E1066F318CBE45600603C18 /* mac80211_2.6.24.4_frag.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mac80211_2.6.24.4_frag.patch; sourceTree = "<group>"; };
+		6E1066F418CBE45600603C18 /* mac80211_2.6.26-rc8-wl_frag.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211_2.6.26-rc8-wl_frag.patch"; sourceTree = "<group>"; };
+		6E1066F518CBE45600603C18 /* mac80211_2.6.26-wl_frag.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211_2.6.26-wl_frag.patch"; sourceTree = "<group>"; };
+		6E1066F618CBE45600603C18 /* mac80211_2.6.26_frag.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mac80211_2.6.26_frag.patch; sourceTree = "<group>"; };
+		6E1066F718CBE45600603C18 /* mac80211_2.6.27_frag+ack.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211_2.6.27_frag+ack.patch"; sourceTree = "<group>"; };
+		6E1066F818CBE45600603C18 /* mac80211_2.6.28-rc4-wl_frag+ack_v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211_2.6.28-rc4-wl_frag+ack_v2.patch"; sourceTree = "<group>"; };
+		6E1066F918CBE45600603C18 /* mac80211_2.6.28-rc4-wl_frag+ack_v3.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211_2.6.28-rc4-wl_frag+ack_v3.patch"; sourceTree = "<group>"; };
+		6E1066FA18CBE45600603C18 /* mac80211_2.6.28-rc8-wl_frag+ack_radiotap.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "mac80211_2.6.28-rc8-wl_frag+ack_radiotap.patch"; sourceTree = "<group>"; };
+		6E1066FB18CBE45600603C18 /* madwifi-ng-r4073.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r4073.patch"; sourceTree = "<group>"; };
+		6E1066FC18CBE45600603C18 /* madwifi-old-r1417.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-old-r1417.patch"; sourceTree = "<group>"; };
+		6E1066FE18CBE45600603C18 /* aicrack-ng-rc2_Intel_macOSX.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "aicrack-ng-rc2_Intel_macOSX.patch"; sourceTree = "<group>"; };
+		6E1066FF18CBE45600603C18 /* ath5k-frequency-chaos-2.6.27-gentoo-r2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ath5k-frequency-chaos-2.6.27-gentoo-r2.patch"; sourceTree = "<group>"; };
+		6E10670018CBE45600603C18 /* hostap-driver-0.3.9.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hostap-driver-0.3.9.patch"; sourceTree = "<group>"; };
+		6E10670118CBE45600603C18 /* hostap-driver-0.4.5.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hostap-driver-0.4.5.patch"; sourceTree = "<group>"; };
+		6E10670218CBE45600603C18 /* hostap-kernel-2.6.16.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "hostap-kernel-2.6.16.patch"; sourceTree = "<group>"; };
+		6E10670318CBE45600603C18 /* ieee80211_inject.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ieee80211_inject.patch; sourceTree = "<group>"; };
+		6E10670418CBE45600603C18 /* ipw2200-1.1.3-inject.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ipw2200-1.1.3-inject.patch"; sourceTree = "<group>"; };
+		6E10670518CBE45600603C18 /* linux-wlan-0.2.3.packet.injection.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linux-wlan-0.2.3.packet.injection.patch"; sourceTree = "<group>"; };
+		6E10670618CBE45600603C18 /* linux-wlan-0.2.5.packet.injection.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "linux-wlan-0.2.5.packet.injection.patch"; sourceTree = "<group>"; };
+		6E10670718CBE45600603C18 /* madwifi-cvs-20050707.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-cvs-20050707.patch"; sourceTree = "<group>"; };
+		6E10670818CBE45600603C18 /* madwifi-cvs-20050814.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-cvs-20050814.patch"; sourceTree = "<group>"; };
+		6E10670918CBE45600603C18 /* madwifi-cvs-20051025.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-cvs-20051025.patch"; sourceTree = "<group>"; };
+		6E10670A18CBE45600603C18 /* madwifi-ng-r1457-1473_disable_retry_raw.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1457-1473_disable_retry_raw.patch"; sourceTree = "<group>"; };
+		6E10670B18CBE45600603C18 /* madwifi-ng-r1475_disable_retry_raw.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1475_disable_retry_raw.patch"; sourceTree = "<group>"; };
+		6E10670C18CBE45600603C18 /* madwifi-ng-r1486.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1486.patch"; sourceTree = "<group>"; };
+		6E10670D18CBE45600603C18 /* madwifi-ng-r1520.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1520.patch"; sourceTree = "<group>"; };
+		6E10670E18CBE45600603C18 /* madwifi-ng-r1526.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1526.patch"; sourceTree = "<group>"; };
+		6E10670F18CBE45600603C18 /* madwifi-ng-r1545.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1545.patch"; sourceTree = "<group>"; };
+		6E10671018CBE45600603C18 /* madwifi-ng-r1679.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1679.patch"; sourceTree = "<group>"; };
+		6E10671118CBE45600603C18 /* madwifi-ng-r1713.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1713.patch"; sourceTree = "<group>"; };
+		6E10671218CBE45600603C18 /* madwifi-ng-r1730.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1730.patch"; sourceTree = "<group>"; };
+		6E10671318CBE45600603C18 /* madwifi-ng-r1886.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1886.patch"; sourceTree = "<group>"; };
+		6E10671418CBE45600603C18 /* madwifi-ng-r1983.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r1983.patch"; sourceTree = "<group>"; };
+		6E10671518CBE45600603C18 /* madwifi-ng-r2277.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r2277.patch"; sourceTree = "<group>"; };
+		6E10671618CBE45600603C18 /* madwifi-ng-r3386v3.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r3386v3.patch"; sourceTree = "<group>"; };
+		6E10671718CBE45600603C18 /* madwifi-ng-r3745.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r3745.patch"; sourceTree = "<group>"; };
+		6E10671818CBE45600603C18 /* madwifi-ng-r3925.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "madwifi-ng-r3925.patch"; sourceTree = "<group>"; };
+		6E10671918CBE45600603C18 /* rt2500-cvs-20050724.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2500-cvs-20050724.patch"; sourceTree = "<group>"; };
+		6E10671A18CBE45600603C18 /* rt2500-cvs-20051008-prismheader.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2500-cvs-20051008-prismheader.patch"; sourceTree = "<group>"; };
+		6E10671B18CBE45600603C18 /* rt2500-cvs-2005112305.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2500-cvs-2005112305.patch"; sourceTree = "<group>"; };
+		6E10671C18CBE45600603C18 /* rt2570-cvs-20050824.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2570-cvs-20050824.patch"; sourceTree = "<group>"; };
+		6E10671D18CBE45600603C18 /* rt2570-cvs-20051008-prismheader.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2570-cvs-20051008-prismheader.patch"; sourceTree = "<group>"; };
+		6E10671E18CBE45600603C18 /* rt2570-cvs-2005112305.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2570-cvs-2005112305.patch"; sourceTree = "<group>"; };
+		6E10671F18CBE45600603C18 /* rt73_2.6.24.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rt73_2.6.24.patch; sourceTree = "<group>"; };
+		6E10672018CBE45600603C18 /* rtl8180-0.21.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rtl8180-0.21.patch"; sourceTree = "<group>"; };
+		6E10672118CBE45600603C18 /* rtl8187_1010.0622.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_1010.0622.patch; sourceTree = "<group>"; };
+		6E10672218CBE45600603C18 /* rtl8187_1010.0622v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_1010.0622v2.patch; sourceTree = "<group>"; };
+		6E10672318CBE45600603C18 /* rtl8187_1025v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_1025v2.patch; sourceTree = "<group>"; };
+		6E10672418CBE45700603C18 /* rtl8187_2.6.20.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.20.patch; sourceTree = "<group>"; };
+		6E10672518CBE45700603C18 /* rtl8187_2.6.20v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.20v2.patch; sourceTree = "<group>"; };
+		6E10672618CBE45700603C18 /* rtl8187_2.6.20v3.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.20v3.patch; sourceTree = "<group>"; };
+		6E10672718CBE45700603C18 /* rtl8187_2.6.20v4.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.20v4.patch; sourceTree = "<group>"; };
+		6E10672818CBE45700603C18 /* rtl8187_2.6.21v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.21v2.patch; sourceTree = "<group>"; };
+		6E10672918CBE45700603C18 /* rtl8187_2.6.21v4.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.21v4.patch; sourceTree = "<group>"; };
+		6E10672A18CBE45700603C18 /* rtl8187_2.6.21v5.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.21v5.patch; sourceTree = "<group>"; };
+		6E10672B18CBE45700603C18 /* rtl8187_2.6.22.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.22.patch; sourceTree = "<group>"; };
+		6E10672C18CBE45700603C18 /* rtl8187_2.6.24.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.24.patch; sourceTree = "<group>"; };
+		6E10672D18CBE45700603C18 /* rtl8187_2.6.24v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.24v2.patch; sourceTree = "<group>"; };
+		6E10672E18CBE45700603C18 /* rtl8187_2.6.24v3.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.24v3.patch; sourceTree = "<group>"; };
+		6E10672F18CBE45700603C18 /* sqlite-3.4.2-lib-cygwin.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite-3.4.2-lib-cygwin.diff"; sourceTree = "<group>"; };
+		6E10673018CBE45700603C18 /* sqlite-3.5.1-lib_cygwin.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite-3.5.1-lib_cygwin.diff"; sourceTree = "<group>"; };
+		6E10673118CBE45700603C18 /* sqlite-3.5.4-lib_cygwin.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite-3.5.4-lib_cygwin.diff"; sourceTree = "<group>"; };
+		6E10673218CBE45700603C18 /* sqlite-3.5.7-lib_cygwin.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite-3.5.7-lib_cygwin.diff"; sourceTree = "<group>"; };
+		6E10673318CBE45700603C18 /* sqlite-3.6.11-lib_cygwin.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite-3.6.11-lib_cygwin.diff"; sourceTree = "<group>"; };
+		6E10673418CBE45700603C18 /* sqlite-3.6.13-lib_cygwin.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sqlite-3.6.13-lib_cygwin.diff"; sourceTree = "<group>"; };
+		6E10673518CBE45700603C18 /* wlanng-0.2.1-pre26.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "wlanng-0.2.1-pre26.patch"; sourceTree = "<group>"; };
+		6E10673618CBE45700603C18 /* zd1211rw-inject+dbi-fix-2.6.26.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zd1211rw-inject+dbi-fix-2.6.26.patch"; sourceTree = "<group>"; };
+		6E10673718CBE45700603C18 /* zd1211rw-inject+dbi-fix-2.6.39.2.2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zd1211rw-inject+dbi-fix-2.6.39.2.2.patch"; sourceTree = "<group>"; };
+		6E10673818CBE45700603C18 /* zd1211rw-inject+dbi-fix-2.6.39.4.diff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zd1211rw-inject+dbi-fix-2.6.39.4.diff"; sourceTree = "<group>"; };
+		6E10673918CBE45700603C18 /* zd1211rw-inject+dbi-fix-3.3.2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zd1211rw-inject+dbi-fix-3.3.2.patch"; sourceTree = "<group>"; };
+		6E10673A18CBE45700603C18 /* zd1211rw_inject_2.6.17.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zd1211rw_inject_2.6.17.patch; sourceTree = "<group>"; };
+		6E10673B18CBE45700603C18 /* zd1211rw_inject_2.6.20.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zd1211rw_inject_2.6.20.patch; sourceTree = "<group>"; };
+		6E10673C18CBE45700603C18 /* zd1211rw_inject_2.6.21-gentoo.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zd1211rw_inject_2.6.21-gentoo.patch"; sourceTree = "<group>"; };
+		6E10673D18CBE45700603C18 /* zd1211rw_inject_2.6.22.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zd1211rw_inject_2.6.22.patch; sourceTree = "<group>"; };
+		6E10673E18CBE45700603C18 /* zd1211rw_inject_2.6.23.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zd1211rw_inject_2.6.23.patch; sourceTree = "<group>"; };
+		6E10673F18CBE45700603C18 /* zd1211rw_inject_2.6.26.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zd1211rw_inject_2.6.26.patch; sourceTree = "<group>"; };
+		6E10674018CBE45700603C18 /* zd1211rw_malformed.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = zd1211rw_malformed.patch; sourceTree = "<group>"; };
+		6E10674118CBE45700603C18 /* prism54-svn-20050724.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "prism54-svn-20050724.patch"; sourceTree = "<group>"; };
+		6E10674218CBE45700603C18 /* rt2570-k2wrlz-1.6.1_2.6.24.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rt2570-k2wrlz-1.6.1_2.6.24.patch"; sourceTree = "<group>"; };
+		6E10674318CBE45700603C18 /* rt73_2.6.27.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rt73_2.6.27.patch; sourceTree = "<group>"; };
+		6E10674418CBE45700603C18 /* rtl8180-0.21v2.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rtl8180-0.21v2.patch"; sourceTree = "<group>"; };
+		6E10674518CBE45700603C18 /* rtl8187-mac80211-injection-speed-2.6.28-rc6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rtl8187-mac80211-injection-speed-2.6.28-rc6.patch"; sourceTree = "<group>"; };
+		6E10674618CBE45700603C18 /* rtl8187_2.6.27.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.27.patch; sourceTree = "<group>"; };
+		6E10674718CBE45700603C18 /* rtl8187_2.6.32.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_2.6.32.patch; sourceTree = "<group>"; };
+		6E10674818CBE45700603C18 /* rtl8187_2.6.35-monitor_only.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "rtl8187_2.6.35-monitor_only.patch"; sourceTree = "<group>"; };
+		6E10674918CBE45700603C18 /* rtl8187_hw_signal_backport_2.6.28.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rtl8187_hw_signal_backport_2.6.28.patch; sourceTree = "<group>"; };
+		6E10674A18CBE45700603C18 /* zd1211rw-inject+dbi-fix-3.7.4.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "zd1211rw-inject+dbi-fix-3.7.4.patch"; sourceTree = "<group>"; };
+		6E10674B18CBE45700603C18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		6E10674C18CBE45700603C18 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		6E10674E18CBE45700603C18 /* airdriver-ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "airdriver-ng"; sourceTree = "<group>"; };
+		6E10675118CBE45700603C18 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		6E10675218CBE45700603C18 /* libDumpParse.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libDumpParse.py; sourceTree = "<group>"; };
+		6E10675318CBE45700603C18 /* libOuiParse.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libOuiParse.py; sourceTree = "<group>"; };
+		6E10675418CBE45700603C18 /* airdrop-ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airdrop-ng"; sourceTree = "<group>"; };
+		6E10675618CBE45700603C18 /* airdrop-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "airdrop-ng.1"; sourceTree = "<group>"; };
+		6E10675718CBE45700603C18 /* Apple.sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Apple.sample.txt; sourceTree = "<group>"; };
+		6E10675818CBE45700603C18 /* dropRules.conf.example */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dropRules.conf.example; sourceTree = "<group>"; };
+		6E10675918CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10675A18CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10675C18CBE45700603C18 /* install.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = install.py; sourceTree = "<group>"; };
+		6E10675D18CBE45700603C18 /* uninstall.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = uninstall.py; sourceTree = "<group>"; };
+		6E10675E18CBE45700603C18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		6E10675F18CBE45700603C18 /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
+		6E10676118CBE45700603C18 /* airgraph-ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "airgraph-ng"; sourceTree = "<group>"; };
+		6E10676218CBE45700603C18 /* dump-join */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dump-join"; sourceTree = "<group>"; };
+		6E10676418CBE45700603C18 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		6E10676518CBE45700603C18 /* lib_Airgraphviz.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = lib_Airgraphviz.py; sourceTree = "<group>"; };
+		6E10676618CBE45700603C18 /* libDumpParse.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libDumpParse.py; sourceTree = "<group>"; };
+		6E10676718CBE45700603C18 /* libOuiParse.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = libOuiParse.py; sourceTree = "<group>"; };
+		6E10676918CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10676A18CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10676C18CBE45700603C18 /* airgraph-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "airgraph-ng.1"; sourceTree = "<group>"; };
+		6E10676D18CBE45700603C18 /* dump-join.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "dump-join.1"; sourceTree = "<group>"; };
+		6E10676E18CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10676F18CBE45700603C18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		6E10677018CBE45700603C18 /* setup.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = setup.py; sourceTree = "<group>"; };
+		6E10677218CBE45700603C18 /* test-1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "test-1.txt"; sourceTree = "<group>"; };
+		6E10677318CBE45700603C18 /* airmon-ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "airmon-ng"; sourceTree = "<group>"; };
+		6E10677418CBE45700603C18 /* airmon-ng.freebsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "airmon-ng.freebsd"; sourceTree = "<group>"; };
+		6E10677518CBE45700603C18 /* airmon-zc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "airmon-zc"; sourceTree = "<group>"; };
+		6E10677618CBE45700603C18 /* airodump-ng-oui-update */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "airodump-ng-oui-update"; sourceTree = "<group>"; };
+		6E10677718CBE45700603C18 /* dcrack.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = dcrack.py; sourceTree = "<group>"; };
+		6E10677818CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10677A18CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E10677B18CBE45700603C18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		6E10677C18CBE45700603C18 /* versuck-ng */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "versuck-ng"; sourceTree = "<group>"; };
+		6E10677D18CBE45700603C18 /* versuck-ng.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "versuck-ng.1"; sourceTree = "<group>"; };
+		6E10677F18CBE45700603C18 /* airbase-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airbase-ng.c"; sourceTree = "<group>"; };
+		6E10678018CBE45700603C18 /* aircrack-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "aircrack-ng.c"; sourceTree = "<group>"; };
+		6E10678118CBE45700603C18 /* aircrack-ng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "aircrack-ng.h"; sourceTree = "<group>"; };
+		6E10678218CBE45700603C18 /* aircrack-ptw-lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "aircrack-ptw-lib.c"; sourceTree = "<group>"; };
+		6E10678318CBE45700603C18 /* aircrack-ptw-lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "aircrack-ptw-lib.h"; sourceTree = "<group>"; };
+		6E10678418CBE45700603C18 /* airdecap-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airdecap-ng.c"; sourceTree = "<group>"; };
+		6E10678518CBE45700603C18 /* airdecloak-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airdecloak-ng.c"; sourceTree = "<group>"; };
+		6E10678618CBE45700603C18 /* airdecloak-ng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "airdecloak-ng.h"; sourceTree = "<group>"; };
+		6E10678718CBE45700603C18 /* aireplay-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "aireplay-ng.c"; sourceTree = "<group>"; };
+		6E10678818CBE45700603C18 /* airodump-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airodump-ng.c"; sourceTree = "<group>"; };
+		6E10678918CBE45700603C18 /* airodump-ng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "airodump-ng.h"; sourceTree = "<group>"; };
+		6E10678A18CBE45700603C18 /* airolib-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airolib-ng.c"; sourceTree = "<group>"; };
+		6E10678B18CBE45700603C18 /* airserv-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airserv-ng.c"; sourceTree = "<group>"; };
+		6E10678C18CBE45700603C18 /* airtun-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "airtun-ng.c"; sourceTree = "<group>"; };
+		6E10678D18CBE45700603C18 /* besside-ng-crawler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "besside-ng-crawler.c"; sourceTree = "<group>"; };
+		6E10678E18CBE45700603C18 /* besside-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "besside-ng.c"; sourceTree = "<group>"; };
+		6E10678F18CBE45700603C18 /* buddy-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "buddy-ng.c"; sourceTree = "<group>"; };
+		6E10679018CBE45700603C18 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		6E10679118CBE45700603C18 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		6E10679218CBE45700603C18 /* crctable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crctable.h; sourceTree = "<group>"; };
+		6E10679318CBE45700603C18 /* crypto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto.c; sourceTree = "<group>"; };
+		6E10679418CBE45700603C18 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		6E10679518CBE45700603C18 /* easside-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "easside-ng.c"; sourceTree = "<group>"; };
+		6E10679618CBE45700603C18 /* easside.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easside.h; sourceTree = "<group>"; };
+		6E10679718CBE45700603C18 /* gcrypt-openssl-wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gcrypt-openssl-wrapper.h"; sourceTree = "<group>"; };
+		6E10679918CBE45700603C18 /* ethernet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ethernet.h; sourceTree = "<group>"; };
+		6E10679A18CBE45700603C18 /* ieee80211.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ieee80211.h; sourceTree = "<group>"; };
+		6E10679B18CBE45700603C18 /* if_arp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_arp.h; sourceTree = "<group>"; };
+		6E10679C18CBE45700603C18 /* if_llc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = if_llc.h; sourceTree = "<group>"; };
+		6E10679D18CBE45700603C18 /* ivstools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ivstools.c; sourceTree = "<group>"; };
+		6E10679E18CBE45700603C18 /* kstats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kstats.c; sourceTree = "<group>"; };
+		6E10679F18CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E1067A018CBE45700603C18 /* makeivs-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "makeivs-ng.c"; sourceTree = "<group>"; };
+		6E1067A218CBE45700603C18 /* airpcap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = airpcap.c; sourceTree = "<group>"; };
+		6E1067A318CBE45700603C18 /* airpcap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = airpcap.h; sourceTree = "<group>"; };
+		6E1067A418CBE45700603C18 /* byteorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = byteorder.h; sourceTree = "<group>"; };
+		6E1067A518CBE45700603C18 /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		6E1067A618CBE45700603C18 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		6E1067A718CBE45700603C18 /* crctable_osdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crctable_osdep.h; sourceTree = "<group>"; };
+		6E1067A818CBE45700603C18 /* cygwin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cygwin.c; sourceTree = "<group>"; };
+		6E1067A918CBE45700603C18 /* cygwin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cygwin.h; sourceTree = "<group>"; };
+		6E1067AA18CBE45700603C18 /* cygwin_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cygwin_tap.c; sourceTree = "<group>"; };
+		6E1067AB18CBE45700603C18 /* darwin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = darwin.c; sourceTree = "<group>"; };
+		6E1067AC18CBE45700603C18 /* darwin_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = darwin_tap.c; sourceTree = "<group>"; };
+		6E1067AD18CBE45700603C18 /* dummy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dummy.c; sourceTree = "<group>"; };
+		6E1067AE18CBE45700603C18 /* dummy_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dummy_tap.c; sourceTree = "<group>"; };
+		6E1067AF18CBE45700603C18 /* file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file.c; sourceTree = "<group>"; };
+		6E1067B018CBE45700603C18 /* freebsd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = freebsd.c; sourceTree = "<group>"; };
+		6E1067B118CBE45700603C18 /* freebsd_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = freebsd_tap.c; sourceTree = "<group>"; };
+		6E1067B218CBE45700603C18 /* linux.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linux.c; sourceTree = "<group>"; };
+		6E1067B318CBE45700603C18 /* linux_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = linux_tap.c; sourceTree = "<group>"; };
+		6E1067B418CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E1067B518CBE45700603C18 /* netbsd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbsd.c; sourceTree = "<group>"; };
+		6E1067B618CBE45700603C18 /* netbsd_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = netbsd_tap.c; sourceTree = "<group>"; };
+		6E1067B718CBE45700603C18 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
+		6E1067B818CBE45700603C18 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
+		6E1067B918CBE45700603C18 /* openbsd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = openbsd.c; sourceTree = "<group>"; };
+		6E1067BA18CBE45700603C18 /* openbsd_tap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = openbsd_tap.c; sourceTree = "<group>"; };
+		6E1067BB18CBE45700603C18 /* osdep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = osdep.c; sourceTree = "<group>"; };
+		6E1067BC18CBE45700603C18 /* osdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = osdep.h; sourceTree = "<group>"; };
+		6E1067BD18CBE45700603C18 /* packed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packed.h; sourceTree = "<group>"; };
+		6E1067BF18CBE45700603C18 /* ieee80211_radiotap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ieee80211_radiotap.h; sourceTree = "<group>"; };
+		6E1067C018CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E1067C118CBE45700603C18 /* radiotap-parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "radiotap-parser.c"; sourceTree = "<group>"; };
+		6E1067C218CBE45700603C18 /* radiotap-parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "radiotap-parser.h"; sourceTree = "<group>"; };
+		6E1067C418CBE45700603C18 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		6E1067C518CBE45700603C18 /* packetforge-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "packetforge-ng.c"; sourceTree = "<group>"; };
+		6E1067C618CBE45700603C18 /* pcap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcap.h; sourceTree = "<group>"; };
+		6E1067C718CBE45700603C18 /* sha1-git.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "sha1-git.c"; sourceTree = "<group>"; };
+		6E1067C818CBE45700603C18 /* sha1-git.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sha1-git.h"; sourceTree = "<group>"; };
+		6E1067C918CBE45700603C18 /* sha1-sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sha1-sse2.h"; sourceTree = "<group>"; };
+		6E1067CA18CBE45700603C18 /* sha1-sse2.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = "sha1-sse2.S"; sourceTree = "<group>"; };
+		6E1067CB18CBE45700603C18 /* tkiptun-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "tkiptun-ng.c"; sourceTree = "<group>"; };
+		6E1067CC18CBE45700603C18 /* uniqueiv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uniqueiv.c; sourceTree = "<group>"; };
+		6E1067CD18CBE45700603C18 /* uniqueiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uniqueiv.h; sourceTree = "<group>"; };
+		6E1067CE18CBE45700603C18 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		6E1067CF18CBE45700603C18 /* wesside-ng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "wesside-ng.c"; sourceTree = "<group>"; };
+		6E1067D018CBE45700603C18 /* wkp-frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "wkp-frame.h"; sourceTree = "<group>"; };
+		6E1067D118CBE45700603C18 /* wpaclean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wpaclean.c; sourceTree = "<group>"; };
+		6E1067D318CBE45700603C18 /* Chinese-SSID-Name.pcap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chinese-SSID-Name.pcap"; sourceTree = "<group>"; };
+		6E1067D518CBE45700603C18 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		6E1067D618CBE45700603C18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		6E1067D718CBE45700603C18 /* test-calc-4pmk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-calc-4pmk.c"; sourceTree = "<group>"; };
+		6E1067D818CBE45700603C18 /* test-calc-mic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-calc-mic.c"; sourceTree = "<group>"; };
+		6E1067D918CBE45700603C18 /* test-calc-pmk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-calc-pmk.c"; sourceTree = "<group>"; };
+		6E1067DA18CBE45700603C18 /* test-calc-ptk.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-calc-ptk.c"; sourceTree = "<group>"; };
+		6E1067DB18CBE45700603C18 /* test-decrypt-ccmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-decrypt-ccmp.c"; sourceTree = "<group>"; };
+		6E1067DC18CBE45700603C18 /* test-encrypt-wep.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "test-encrypt-wep.c"; sourceTree = "<group>"; };
+		6E1067DD18CBE45700603C18 /* tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
+		6E1067DE18CBE45700603C18 /* passphrases.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = passphrases.db; sourceTree = "<group>"; };
+		6E1067DF18CBE45700603C18 /* password.lst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = password.lst; sourceTree = "<group>"; };
+		6E1067E018CBE45700603C18 /* replay.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = replay.py; sourceTree = "<group>"; };
+		6E1067E118CBE45700603C18 /* test-airdecap-ng.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "test-airdecap-ng.sh"; sourceTree = "<group>"; };
+		6E1067E218CBE45700603C18 /* test-airolib-sqlite.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "test-airolib-sqlite.sh"; sourceTree = "<group>"; };
+		6E1067E318CBE45700603C18 /* wep.open.system.authentication.cap */ = {isa = PBXFileReference; lastKnownFileType = file; path = wep.open.system.authentication.cap; sourceTree = "<group>"; };
+		6E1067E418CBE45700603C18 /* wep.shared.key.authentication.cap */ = {isa = PBXFileReference; lastKnownFileType = file; path = wep.shared.key.authentication.cap; sourceTree = "<group>"; };
+		6E1067E518CBE45700603C18 /* wpa-psk-linksys.cap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wpa-psk-linksys.cap"; sourceTree = "<group>"; };
+		6E1067E618CBE45700603C18 /* wpa.cap */ = {isa = PBXFileReference; lastKnownFileType = file; path = wpa.cap; sourceTree = "<group>"; };
+		6E1067E718CBE45700603C18 /* wpa2-psk-linksys.cap */ = {isa = PBXFileReference; lastKnownFileType = file; path = "wpa2-psk-linksys.cap"; sourceTree = "<group>"; };
+		6E1067E818CBE45700603C18 /* wpa2.eapol.cap */ = {isa = PBXFileReference; lastKnownFileType = file; path = wpa2.eapol.cap; sourceTree = "<group>"; };
+		6E1067E918CBE45700603C18 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
 		6E46EFD618B19A330065D5D0 /* Wi-Fi Crack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wi-Fi Crack.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E46EFD918B19A330065D5D0 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6E46EFDC18B19A330065D5D0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -109,11 +469,661 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E105BE618CBD16100603C18 /* Products */ = {
+		6E10666018CBE45600603C18 /* aircrack-ng */ = {
 			isa = PBXGroup;
 			children = (
+				6E10666118CBE45600603C18 /* .travis.yml */,
+				6E10666518CBE45600603C18 /* AUTHORS */,
+				6E10666618CBE45600603C18 /* ChangeLog */,
+				6E10666718CBE45600603C18 /* common.mak */,
+				6E10666818CBE45600603C18 /* contrib */,
+				6E10667218CBE45600603C18 /* evalrev */,
+				6E10667318CBE45600603C18 /* INSTALLING */,
+				6E10667418CBE45600603C18 /* lib */,
+				6E1066BA18CBE45600603C18 /* LICENSE */,
+				6E1066BB18CBE45600603C18 /* LICENSE.OpenSSL */,
+				6E1066BC18CBE45600603C18 /* Makefile */,
+				6E1066BD18CBE45600603C18 /* manpages */,
+				6E1066D718CBE45600603C18 /* packages */,
+				6E1066DB18CBE45600603C18 /* patches */,
+				6E10674B18CBE45700603C18 /* README */,
+				6E10674C18CBE45700603C18 /* README.md */,
+				6E10674D18CBE45700603C18 /* scripts */,
+				6E10677E18CBE45700603C18 /* src */,
+				6E1067D218CBE45700603C18 /* test */,
+				6E1067E918CBE45700603C18 /* VERSION */,
 			);
-			name = Products;
+			name = "aircrack-ng";
+			path = "../aircrack-ng";
+			sourceTree = "<group>";
+		};
+		6E10666818CBE45600603C18 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				6E10666918CBE45600603C18 /* airpcap */,
+				6E10666C18CBE45600603C18 /* commview */,
+				6E10666F18CBE45600603C18 /* peek */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		6E10666918CBE45600603C18 /* airpcap */ = {
+			isa = PBXGroup;
+			children = (
+				6E10666A18CBE45600603C18 /* airpcap.c */,
+				6E10666B18CBE45600603C18 /* Makefile */,
+			);
+			path = airpcap;
+			sourceTree = "<group>";
+		};
+		6E10666C18CBE45600603C18 /* commview */ = {
+			isa = PBXGroup;
+			children = (
+				6E10666D18CBE45600603C18 /* commview.c */,
+				6E10666E18CBE45600603C18 /* Makefile */,
+			);
+			path = commview;
+			sourceTree = "<group>";
+		};
+		6E10666F18CBE45600603C18 /* peek */ = {
+			isa = PBXGroup;
+			children = (
+				6E10667018CBE45600603C18 /* Makefile */,
+				6E10667118CBE45600603C18 /* omnipeek.c */,
+			);
+			path = peek;
+			sourceTree = "<group>";
+		};
+		6E10667418CBE45600603C18 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				6E10667518CBE45600603C18 /* csharp */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		6E10667518CBE45600603C18 /* csharp */ = {
+			isa = PBXGroup;
+			children = (
+				6E10667618CBE45600603C18 /* Example1 */,
+				6E10668518CBE45600603C18 /* MonoExample */,
+				6E1066AB18CBE45600603C18 /* WirelessPanda */,
+			);
+			path = csharp;
+			sourceTree = "<group>";
+		};
+		6E10667618CBE45600603C18 /* Example1 */ = {
+			isa = PBXGroup;
+			children = (
+				6E10667718CBE45600603C18 /* Example1 */,
+				6E10668418CBE45600603C18 /* Example1.sln */,
+			);
+			path = Example1;
+			sourceTree = "<group>";
+		};
+		6E10667718CBE45600603C18 /* Example1 */ = {
+			isa = PBXGroup;
+			children = (
+				6E10667818CBE45600603C18 /* app.config */,
+				6E10667918CBE45600603C18 /* Example1.csproj */,
+				6E10667A18CBE45600603C18 /* Form1.cs */,
+				6E10667B18CBE45600603C18 /* Form1.Designer.cs */,
+				6E10667C18CBE45600603C18 /* Form1.resx */,
+				6E10667D18CBE45600603C18 /* Program.cs */,
+				6E10667E18CBE45600603C18 /* Properties */,
+			);
+			path = Example1;
+			sourceTree = "<group>";
+		};
+		6E10667E18CBE45600603C18 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				6E10667F18CBE45600603C18 /* AssemblyInfo.cs */,
+				6E10668018CBE45600603C18 /* Resources.Designer.cs */,
+				6E10668118CBE45600603C18 /* Resources.resx */,
+				6E10668218CBE45600603C18 /* Settings.Designer.cs */,
+				6E10668318CBE45600603C18 /* Settings.settings */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		6E10668518CBE45600603C18 /* MonoExample */ = {
+			isa = PBXGroup;
+			children = (
+				6E10668618CBE45600603C18 /* NDesk-dbus */,
+				6E1066A418CBE45600603C18 /* NewStationNotify */,
+				6E1066AA18CBE45600603C18 /* NewStationNotify.sln */,
+			);
+			path = MonoExample;
+			sourceTree = "<group>";
+		};
+		6E10668618CBE45600603C18 /* NDesk-dbus */ = {
+			isa = PBXGroup;
+			children = (
+				6E10668718CBE45600603C18 /* Address.cs */,
+				6E10668818CBE45600603C18 /* AssemblyInfo.cs */,
+				6E10668918CBE45600603C18 /* Authentication.cs */,
+				6E10668A18CBE45600603C18 /* Bus.cs */,
+				6E10668B18CBE45600603C18 /* BusObject.cs */,
+				6E10668C18CBE45600603C18 /* Connection.cs */,
+				6E10668D18CBE45600603C18 /* DBus.cs */,
+				6E10668E18CBE45600603C18 /* DProxy.cs */,
+				6E10668F18CBE45600603C18 /* ExportObject.cs */,
+				6E10669018CBE45600603C18 /* Introspection.cs */,
+				6E10669118CBE45600603C18 /* Mapper.cs */,
+				6E10669218CBE45600603C18 /* MatchRule.cs */,
+				6E10669318CBE45600603C18 /* Message.cs */,
+				6E10669418CBE45600603C18 /* MessageFilter.cs */,
+				6E10669518CBE45600603C18 /* MessageReader.cs */,
+				6E10669618CBE45600603C18 /* MessageWriter.cs */,
+				6E10669718CBE45600603C18 /* NDesk-dbus.csproj */,
+				6E10669818CBE45600603C18 /* NDesk-dbus.pidb */,
+				6E10669918CBE45600603C18 /* ndesk.snk */,
+				6E10669A18CBE45600603C18 /* Notifications.cs */,
+				6E10669B18CBE45600603C18 /* PendingCall.cs */,
+				6E10669C18CBE45600603C18 /* Protocol.cs */,
+				6E10669D18CBE45600603C18 /* Signature.cs */,
+				6E10669E18CBE45600603C18 /* SocketTransport.cs */,
+				6E10669F18CBE45600603C18 /* Transport.cs */,
+				6E1066A018CBE45600603C18 /* TypeImplementer.cs */,
+				6E1066A118CBE45600603C18 /* UnixNativeTransport.cs */,
+				6E1066A218CBE45600603C18 /* UnixTransport.cs */,
+				6E1066A318CBE45600603C18 /* Wrapper.cs */,
+			);
+			path = "NDesk-dbus";
+			sourceTree = "<group>";
+		};
+		6E1066A418CBE45600603C18 /* NewStationNotify */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066A518CBE45600603C18 /* AssemblyInfo.cs */,
+				6E1066A618CBE45600603C18 /* Main.cs */,
+				6E1066A718CBE45600603C18 /* NewStationNotify.csproj */,
+				6E1066A818CBE45600603C18 /* NewStationNotify.pidb */,
+				6E1066A918CBE45600603C18 /* Notification.cs */,
+			);
+			path = NewStationNotify;
+			sourceTree = "<group>";
+		};
+		6E1066AB18CBE45600603C18 /* WirelessPanda */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066AC18CBE45600603C18 /* AccessPoint.cs */,
+				6E1066AD18CBE45600603C18 /* Coordinates.cs */,
+				6E1066AE18CBE45600603C18 /* Properties */,
+				6E1066B018CBE45600603C18 /* Readers */,
+				6E1066B618CBE45600603C18 /* Station.cs */,
+				6E1066B718CBE45600603C18 /* WirelessDevice.cs */,
+				6E1066B818CBE45600603C18 /* WirelessPanda.csproj */,
+				6E1066B918CBE45600603C18 /* WirelessPanda.Mono.csproj */,
+			);
+			path = WirelessPanda;
+			sourceTree = "<group>";
+		};
+		6E1066AE18CBE45600603C18 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066AF18CBE45600603C18 /* AssemblyInfo.cs */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		6E1066B018CBE45600603C18 /* Readers */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066B118CBE45600603C18 /* csvReader.cs */,
+				6E1066B218CBE45600603C18 /* kismetCsvReader.cs */,
+				6E1066B318CBE45600603C18 /* NetXMLReader.cs */,
+				6E1066B418CBE45600603C18 /* Reader.cs */,
+				6E1066B518CBE45600603C18 /* UniversalReader.cs */,
+			);
+			path = Readers;
+			sourceTree = "<group>";
+		};
+		6E1066BD18CBE45600603C18 /* manpages */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066BE18CBE45600603C18 /* airbase-ng.8 */,
+				6E1066BF18CBE45600603C18 /* aircrack-ng.1 */,
+				6E1066C018CBE45600603C18 /* airdecap-ng.1 */,
+				6E1066C118CBE45600603C18 /* airdecloak-ng.1 */,
+				6E1066C218CBE45600603C18 /* airdriver-ng.8 */,
+				6E1066C318CBE45600603C18 /* aireplay-ng.8 */,
+				6E1066C418CBE45600603C18 /* airmon-ng.8 */,
+				6E1066C518CBE45600603C18 /* airmon-zc.8 */,
+				6E1066C618CBE45600603C18 /* airodump-ng-oui-update.8 */,
+				6E1066C718CBE45600603C18 /* airodump-ng.8 */,
+				6E1066C818CBE45600603C18 /* airolib-ng.1 */,
+				6E1066C918CBE45600603C18 /* airserv-ng.8 */,
+				6E1066CA18CBE45600603C18 /* airtun-ng.8 */,
+				6E1066CB18CBE45600603C18 /* besside-ng-crawler.1 */,
+				6E1066CC18CBE45600603C18 /* besside-ng.8 */,
+				6E1066CD18CBE45600603C18 /* buddy-ng.1 */,
+				6E1066CE18CBE45600603C18 /* easside-ng.8 */,
+				6E1066CF18CBE45600603C18 /* ivstools.1 */,
+				6E1066D018CBE45600603C18 /* kstats.1 */,
+				6E1066D118CBE45600603C18 /* Makefile */,
+				6E1066D218CBE45600603C18 /* makeivs-ng.1 */,
+				6E1066D318CBE45600603C18 /* packetforge-ng.1 */,
+				6E1066D418CBE45600603C18 /* tkiptun-ng.8 */,
+				6E1066D518CBE45600603C18 /* wesside-ng.8 */,
+				6E1066D618CBE45600603C18 /* wpaclean.1 */,
+			);
+			path = manpages;
+			sourceTree = "<group>";
+		};
+		6E1066D718CBE45600603C18 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066D818CBE45600603C18 /* aircrack-ng.spec */,
+				6E1066D918CBE45600603C18 /* PKGBUILD */,
+				6E1066DA18CBE45600603C18 /* slack-desc */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		6E1066DB18CBE45600603C18 /* patches */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066DC18CBE45600603C18 /* acx-20070101.patch */,
+				6E1066DD18CBE45600603C18 /* ar9170_regdomain_override.patch */,
+				6E1066DE18CBE45600603C18 /* ath5k-frequency-chaos-2.6.28.patch */,
+				6E1066DF18CBE45600603C18 /* ath5k-injection-2.6.27-rc2.patch */,
+				6E1066E018CBE45600603C18 /* ath5k-pass-failed-crc.patch */,
+				6E1066E118CBE45600603C18 /* ath5k-radiotap-fragfix-2.6.28-rc8-wl.patch */,
+				6E1066E218CBE45600603C18 /* ath5k_regdomain_override.patch */,
+				6E1066E318CBE45600603C18 /* ath9k_regdomain_override.patch */,
+				6E1066E418CBE45600603C18 /* b43-injection-2.6.24.4.patch */,
+				6E1066E518CBE45600603C18 /* b43-injection-2.6.26-rc8-wl.patch */,
+				6E1066E618CBE45600603C18 /* b43-injection-2.6.26-wl.patch */,
+				6E1066E718CBE45600603C18 /* bcm43xx-injection-linux-2.6.20.patch */,
+				6E1066E818CBE45600603C18 /* channel-negative-one-maxim.patch */,
+				6E1066E918CBE45600603C18 /* fix_ath5k_no_data_in_monitor_mode.patch */,
+				6E1066EA18CBE45600603C18 /* hostap-driver-0.4.7.patch */,
+				6E1066EB18CBE45600603C18 /* hostap-kernel-2.6.18.patch */,
+				6E1066EC18CBE45600603C18 /* ieee80211_inject-2.6.22.patch */,
+				6E1066ED18CBE45600603C18 /* ieee80211_inject.patch */,
+				6E1066EE18CBE45600603C18 /* ieee80211_softmac_adjust_bitrate.patch */,
+				6E1066EF18CBE45600603C18 /* ipw2200-1.1.4-inject.patch */,
+				6E1066F018CBE45600603C18 /* linux-wlanng-0.2.8.patch */,
+				6E1066F118CBE45600603C18 /* linux-wlanng-kernel-2.6.28.patch */,
+				6E1066F218CBE45600603C18 /* mac80211-2.6.29-fix-tx-ctl-no-ack-retry-count.patch */,
+				6E1066F318CBE45600603C18 /* mac80211_2.6.24.4_frag.patch */,
+				6E1066F418CBE45600603C18 /* mac80211_2.6.26-rc8-wl_frag.patch */,
+				6E1066F518CBE45600603C18 /* mac80211_2.6.26-wl_frag.patch */,
+				6E1066F618CBE45600603C18 /* mac80211_2.6.26_frag.patch */,
+				6E1066F718CBE45600603C18 /* mac80211_2.6.27_frag+ack.patch */,
+				6E1066F818CBE45600603C18 /* mac80211_2.6.28-rc4-wl_frag+ack_v2.patch */,
+				6E1066F918CBE45600603C18 /* mac80211_2.6.28-rc4-wl_frag+ack_v3.patch */,
+				6E1066FA18CBE45600603C18 /* mac80211_2.6.28-rc8-wl_frag+ack_radiotap.patch */,
+				6E1066FB18CBE45600603C18 /* madwifi-ng-r4073.patch */,
+				6E1066FC18CBE45600603C18 /* madwifi-old-r1417.patch */,
+				6E1066FD18CBE45600603C18 /* old */,
+				6E10674118CBE45700603C18 /* prism54-svn-20050724.patch */,
+				6E10674218CBE45700603C18 /* rt2570-k2wrlz-1.6.1_2.6.24.patch */,
+				6E10674318CBE45700603C18 /* rt73_2.6.27.patch */,
+				6E10674418CBE45700603C18 /* rtl8180-0.21v2.patch */,
+				6E10674518CBE45700603C18 /* rtl8187-mac80211-injection-speed-2.6.28-rc6.patch */,
+				6E10674618CBE45700603C18 /* rtl8187_2.6.27.patch */,
+				6E10674718CBE45700603C18 /* rtl8187_2.6.32.patch */,
+				6E10674818CBE45700603C18 /* rtl8187_2.6.35-monitor_only.patch */,
+				6E10674918CBE45700603C18 /* rtl8187_hw_signal_backport_2.6.28.patch */,
+				6E10674A18CBE45700603C18 /* zd1211rw-inject+dbi-fix-3.7.4.patch */,
+			);
+			path = patches;
+			sourceTree = "<group>";
+		};
+		6E1066FD18CBE45600603C18 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				6E1066FE18CBE45600603C18 /* aicrack-ng-rc2_Intel_macOSX.patch */,
+				6E1066FF18CBE45600603C18 /* ath5k-frequency-chaos-2.6.27-gentoo-r2.patch */,
+				6E10670018CBE45600603C18 /* hostap-driver-0.3.9.patch */,
+				6E10670118CBE45600603C18 /* hostap-driver-0.4.5.patch */,
+				6E10670218CBE45600603C18 /* hostap-kernel-2.6.16.patch */,
+				6E10670318CBE45600603C18 /* ieee80211_inject.patch */,
+				6E10670418CBE45600603C18 /* ipw2200-1.1.3-inject.patch */,
+				6E10670518CBE45600603C18 /* linux-wlan-0.2.3.packet.injection.patch */,
+				6E10670618CBE45600603C18 /* linux-wlan-0.2.5.packet.injection.patch */,
+				6E10670718CBE45600603C18 /* madwifi-cvs-20050707.patch */,
+				6E10670818CBE45600603C18 /* madwifi-cvs-20050814.patch */,
+				6E10670918CBE45600603C18 /* madwifi-cvs-20051025.patch */,
+				6E10670A18CBE45600603C18 /* madwifi-ng-r1457-1473_disable_retry_raw.patch */,
+				6E10670B18CBE45600603C18 /* madwifi-ng-r1475_disable_retry_raw.patch */,
+				6E10670C18CBE45600603C18 /* madwifi-ng-r1486.patch */,
+				6E10670D18CBE45600603C18 /* madwifi-ng-r1520.patch */,
+				6E10670E18CBE45600603C18 /* madwifi-ng-r1526.patch */,
+				6E10670F18CBE45600603C18 /* madwifi-ng-r1545.patch */,
+				6E10671018CBE45600603C18 /* madwifi-ng-r1679.patch */,
+				6E10671118CBE45600603C18 /* madwifi-ng-r1713.patch */,
+				6E10671218CBE45600603C18 /* madwifi-ng-r1730.patch */,
+				6E10671318CBE45600603C18 /* madwifi-ng-r1886.patch */,
+				6E10671418CBE45600603C18 /* madwifi-ng-r1983.patch */,
+				6E10671518CBE45600603C18 /* madwifi-ng-r2277.patch */,
+				6E10671618CBE45600603C18 /* madwifi-ng-r3386v3.patch */,
+				6E10671718CBE45600603C18 /* madwifi-ng-r3745.patch */,
+				6E10671818CBE45600603C18 /* madwifi-ng-r3925.patch */,
+				6E10671918CBE45600603C18 /* rt2500-cvs-20050724.patch */,
+				6E10671A18CBE45600603C18 /* rt2500-cvs-20051008-prismheader.patch */,
+				6E10671B18CBE45600603C18 /* rt2500-cvs-2005112305.patch */,
+				6E10671C18CBE45600603C18 /* rt2570-cvs-20050824.patch */,
+				6E10671D18CBE45600603C18 /* rt2570-cvs-20051008-prismheader.patch */,
+				6E10671E18CBE45600603C18 /* rt2570-cvs-2005112305.patch */,
+				6E10671F18CBE45600603C18 /* rt73_2.6.24.patch */,
+				6E10672018CBE45600603C18 /* rtl8180-0.21.patch */,
+				6E10672118CBE45600603C18 /* rtl8187_1010.0622.patch */,
+				6E10672218CBE45600603C18 /* rtl8187_1010.0622v2.patch */,
+				6E10672318CBE45600603C18 /* rtl8187_1025v2.patch */,
+				6E10672418CBE45700603C18 /* rtl8187_2.6.20.patch */,
+				6E10672518CBE45700603C18 /* rtl8187_2.6.20v2.patch */,
+				6E10672618CBE45700603C18 /* rtl8187_2.6.20v3.patch */,
+				6E10672718CBE45700603C18 /* rtl8187_2.6.20v4.patch */,
+				6E10672818CBE45700603C18 /* rtl8187_2.6.21v2.patch */,
+				6E10672918CBE45700603C18 /* rtl8187_2.6.21v4.patch */,
+				6E10672A18CBE45700603C18 /* rtl8187_2.6.21v5.patch */,
+				6E10672B18CBE45700603C18 /* rtl8187_2.6.22.patch */,
+				6E10672C18CBE45700603C18 /* rtl8187_2.6.24.patch */,
+				6E10672D18CBE45700603C18 /* rtl8187_2.6.24v2.patch */,
+				6E10672E18CBE45700603C18 /* rtl8187_2.6.24v3.patch */,
+				6E10672F18CBE45700603C18 /* sqlite-3.4.2-lib-cygwin.diff */,
+				6E10673018CBE45700603C18 /* sqlite-3.5.1-lib_cygwin.diff */,
+				6E10673118CBE45700603C18 /* sqlite-3.5.4-lib_cygwin.diff */,
+				6E10673218CBE45700603C18 /* sqlite-3.5.7-lib_cygwin.diff */,
+				6E10673318CBE45700603C18 /* sqlite-3.6.11-lib_cygwin.diff */,
+				6E10673418CBE45700603C18 /* sqlite-3.6.13-lib_cygwin.diff */,
+				6E10673518CBE45700603C18 /* wlanng-0.2.1-pre26.patch */,
+				6E10673618CBE45700603C18 /* zd1211rw-inject+dbi-fix-2.6.26.patch */,
+				6E10673718CBE45700603C18 /* zd1211rw-inject+dbi-fix-2.6.39.2.2.patch */,
+				6E10673818CBE45700603C18 /* zd1211rw-inject+dbi-fix-2.6.39.4.diff */,
+				6E10673918CBE45700603C18 /* zd1211rw-inject+dbi-fix-3.3.2.patch */,
+				6E10673A18CBE45700603C18 /* zd1211rw_inject_2.6.17.patch */,
+				6E10673B18CBE45700603C18 /* zd1211rw_inject_2.6.20.patch */,
+				6E10673C18CBE45700603C18 /* zd1211rw_inject_2.6.21-gentoo.patch */,
+				6E10673D18CBE45700603C18 /* zd1211rw_inject_2.6.22.patch */,
+				6E10673E18CBE45700603C18 /* zd1211rw_inject_2.6.23.patch */,
+				6E10673F18CBE45700603C18 /* zd1211rw_inject_2.6.26.patch */,
+				6E10674018CBE45700603C18 /* zd1211rw_malformed.patch */,
+			);
+			path = old;
+			sourceTree = "<group>";
+		};
+		6E10674D18CBE45700603C18 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6E10674E18CBE45700603C18 /* airdriver-ng */,
+				6E10674F18CBE45700603C18 /* airdrop-ng */,
+				6E10676018CBE45700603C18 /* airgraph-ng */,
+				6E10677318CBE45700603C18 /* airmon-ng */,
+				6E10677418CBE45700603C18 /* airmon-ng.freebsd */,
+				6E10677518CBE45700603C18 /* airmon-zc */,
+				6E10677618CBE45700603C18 /* airodump-ng-oui-update */,
+				6E10677718CBE45700603C18 /* dcrack.py */,
+				6E10677818CBE45700603C18 /* Makefile */,
+				6E10677918CBE45700603C18 /* versuck-ng */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		6E10674F18CBE45700603C18 /* airdrop-ng */ = {
+			isa = PBXGroup;
+			children = (
+				6E10675018CBE45700603C18 /* airdrop */,
+				6E10675418CBE45700603C18 /* airdrop-ng */,
+				6E10675518CBE45700603C18 /* doc */,
+				6E10675A18CBE45700603C18 /* Makefile */,
+				6E10675B18CBE45700603C18 /* old-installers */,
+				6E10675E18CBE45700603C18 /* README */,
+				6E10675F18CBE45700603C18 /* setup.py */,
+			);
+			path = "airdrop-ng";
+			sourceTree = "<group>";
+		};
+		6E10675018CBE45700603C18 /* airdrop */ = {
+			isa = PBXGroup;
+			children = (
+				6E10675118CBE45700603C18 /* __init__.py */,
+				6E10675218CBE45700603C18 /* libDumpParse.py */,
+				6E10675318CBE45700603C18 /* libOuiParse.py */,
+			);
+			path = airdrop;
+			sourceTree = "<group>";
+		};
+		6E10675518CBE45700603C18 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				6E10675618CBE45700603C18 /* airdrop-ng.1 */,
+				6E10675718CBE45700603C18 /* Apple.sample.txt */,
+				6E10675818CBE45700603C18 /* dropRules.conf.example */,
+				6E10675918CBE45700603C18 /* Makefile */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		6E10675B18CBE45700603C18 /* old-installers */ = {
+			isa = PBXGroup;
+			children = (
+				6E10675C18CBE45700603C18 /* install.py */,
+				6E10675D18CBE45700603C18 /* uninstall.py */,
+			);
+			path = "old-installers";
+			sourceTree = "<group>";
+		};
+		6E10676018CBE45700603C18 /* airgraph-ng */ = {
+			isa = PBXGroup;
+			children = (
+				6E10676118CBE45700603C18 /* airgraph-ng */,
+				6E10676218CBE45700603C18 /* dump-join */,
+				6E10676318CBE45700603C18 /* graphviz */,
+				6E10676818CBE45700603C18 /* lib */,
+				6E10676A18CBE45700603C18 /* Makefile */,
+				6E10676B18CBE45700603C18 /* man */,
+				6E10676F18CBE45700603C18 /* README */,
+				6E10677018CBE45700603C18 /* setup.py */,
+				6E10677118CBE45700603C18 /* test */,
+			);
+			path = "airgraph-ng";
+			sourceTree = "<group>";
+		};
+		6E10676318CBE45700603C18 /* graphviz */ = {
+			isa = PBXGroup;
+			children = (
+				6E10676418CBE45700603C18 /* __init__.py */,
+				6E10676518CBE45700603C18 /* lib_Airgraphviz.py */,
+				6E10676618CBE45700603C18 /* libDumpParse.py */,
+				6E10676718CBE45700603C18 /* libOuiParse.py */,
+			);
+			path = graphviz;
+			sourceTree = "<group>";
+		};
+		6E10676818CBE45700603C18 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				6E10676918CBE45700603C18 /* Makefile */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		6E10676B18CBE45700603C18 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				6E10676C18CBE45700603C18 /* airgraph-ng.1 */,
+				6E10676D18CBE45700603C18 /* dump-join.1 */,
+				6E10676E18CBE45700603C18 /* Makefile */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		6E10677118CBE45700603C18 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				6E10677218CBE45700603C18 /* test-1.txt */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		6E10677918CBE45700603C18 /* versuck-ng */ = {
+			isa = PBXGroup;
+			children = (
+				6E10677A18CBE45700603C18 /* Makefile */,
+				6E10677B18CBE45700603C18 /* README */,
+				6E10677C18CBE45700603C18 /* versuck-ng */,
+				6E10677D18CBE45700603C18 /* versuck-ng.1 */,
+			);
+			path = "versuck-ng";
+			sourceTree = "<group>";
+		};
+		6E10677E18CBE45700603C18 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6E10677F18CBE45700603C18 /* airbase-ng.c */,
+				6E10678018CBE45700603C18 /* aircrack-ng.c */,
+				6E10678118CBE45700603C18 /* aircrack-ng.h */,
+				6E10678218CBE45700603C18 /* aircrack-ptw-lib.c */,
+				6E10678318CBE45700603C18 /* aircrack-ptw-lib.h */,
+				6E10678418CBE45700603C18 /* airdecap-ng.c */,
+				6E10678518CBE45700603C18 /* airdecloak-ng.c */,
+				6E10678618CBE45700603C18 /* airdecloak-ng.h */,
+				6E10678718CBE45700603C18 /* aireplay-ng.c */,
+				6E10678818CBE45700603C18 /* airodump-ng.c */,
+				6E10678918CBE45700603C18 /* airodump-ng.h */,
+				6E10678A18CBE45700603C18 /* airolib-ng.c */,
+				6E10678B18CBE45700603C18 /* airserv-ng.c */,
+				6E10678C18CBE45700603C18 /* airtun-ng.c */,
+				6E10678D18CBE45700603C18 /* besside-ng-crawler.c */,
+				6E10678E18CBE45700603C18 /* besside-ng.c */,
+				6E10678F18CBE45700603C18 /* buddy-ng.c */,
+				6E10679018CBE45700603C18 /* common.c */,
+				6E10679118CBE45700603C18 /* common.h */,
+				6E10679218CBE45700603C18 /* crctable.h */,
+				6E10679318CBE45700603C18 /* crypto.c */,
+				6E10679418CBE45700603C18 /* crypto.h */,
+				6E10679518CBE45700603C18 /* easside-ng.c */,
+				6E10679618CBE45700603C18 /* easside.h */,
+				6E10679718CBE45700603C18 /* gcrypt-openssl-wrapper.h */,
+				6E10679818CBE45700603C18 /* include */,
+				6E10679D18CBE45700603C18 /* ivstools.c */,
+				6E10679E18CBE45700603C18 /* kstats.c */,
+				6E10679F18CBE45700603C18 /* Makefile */,
+				6E1067A018CBE45700603C18 /* makeivs-ng.c */,
+				6E1067A118CBE45700603C18 /* osdep */,
+				6E1067C518CBE45700603C18 /* packetforge-ng.c */,
+				6E1067C618CBE45700603C18 /* pcap.h */,
+				6E1067C718CBE45700603C18 /* sha1-git.c */,
+				6E1067C818CBE45700603C18 /* sha1-git.h */,
+				6E1067C918CBE45700603C18 /* sha1-sse2.h */,
+				6E1067CA18CBE45700603C18 /* sha1-sse2.S */,
+				6E1067CB18CBE45700603C18 /* tkiptun-ng.c */,
+				6E1067CC18CBE45700603C18 /* uniqueiv.c */,
+				6E1067CD18CBE45700603C18 /* uniqueiv.h */,
+				6E1067CE18CBE45700603C18 /* version.h */,
+				6E1067CF18CBE45700603C18 /* wesside-ng.c */,
+				6E1067D018CBE45700603C18 /* wkp-frame.h */,
+				6E1067D118CBE45700603C18 /* wpaclean.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		6E10679818CBE45700603C18 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				6E10679918CBE45700603C18 /* ethernet.h */,
+				6E10679A18CBE45700603C18 /* ieee80211.h */,
+				6E10679B18CBE45700603C18 /* if_arp.h */,
+				6E10679C18CBE45700603C18 /* if_llc.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		6E1067A118CBE45700603C18 /* osdep */ = {
+			isa = PBXGroup;
+			children = (
+				6E1067A218CBE45700603C18 /* airpcap.c */,
+				6E1067A318CBE45700603C18 /* airpcap.h */,
+				6E1067A418CBE45700603C18 /* byteorder.h */,
+				6E1067A518CBE45700603C18 /* common.c */,
+				6E1067A618CBE45700603C18 /* common.h */,
+				6E1067A718CBE45700603C18 /* crctable_osdep.h */,
+				6E1067A818CBE45700603C18 /* cygwin.c */,
+				6E1067A918CBE45700603C18 /* cygwin.h */,
+				6E1067AA18CBE45700603C18 /* cygwin_tap.c */,
+				6E1067AB18CBE45700603C18 /* darwin.c */,
+				6E1067AC18CBE45700603C18 /* darwin_tap.c */,
+				6E1067AD18CBE45700603C18 /* dummy.c */,
+				6E1067AE18CBE45700603C18 /* dummy_tap.c */,
+				6E1067AF18CBE45700603C18 /* file.c */,
+				6E1067B018CBE45700603C18 /* freebsd.c */,
+				6E1067B118CBE45700603C18 /* freebsd_tap.c */,
+				6E1067B218CBE45700603C18 /* linux.c */,
+				6E1067B318CBE45700603C18 /* linux_tap.c */,
+				6E1067B418CBE45700603C18 /* Makefile */,
+				6E1067B518CBE45700603C18 /* netbsd.c */,
+				6E1067B618CBE45700603C18 /* netbsd_tap.c */,
+				6E1067B718CBE45700603C18 /* network.c */,
+				6E1067B818CBE45700603C18 /* network.h */,
+				6E1067B918CBE45700603C18 /* openbsd.c */,
+				6E1067BA18CBE45700603C18 /* openbsd_tap.c */,
+				6E1067BB18CBE45700603C18 /* osdep.c */,
+				6E1067BC18CBE45700603C18 /* osdep.h */,
+				6E1067BD18CBE45700603C18 /* packed.h */,
+				6E1067BE18CBE45700603C18 /* radiotap */,
+				6E1067C318CBE45700603C18 /* tap-win32 */,
+			);
+			path = osdep;
+			sourceTree = "<group>";
+		};
+		6E1067BE18CBE45700603C18 /* radiotap */ = {
+			isa = PBXGroup;
+			children = (
+				6E1067BF18CBE45700603C18 /* ieee80211_radiotap.h */,
+				6E1067C018CBE45700603C18 /* Makefile */,
+				6E1067C118CBE45700603C18 /* radiotap-parser.c */,
+				6E1067C218CBE45700603C18 /* radiotap-parser.h */,
+			);
+			path = radiotap;
+			sourceTree = "<group>";
+		};
+		6E1067C318CBE45700603C18 /* tap-win32 */ = {
+			isa = PBXGroup;
+			children = (
+				6E1067C418CBE45700603C18 /* common.h */,
+			);
+			path = "tap-win32";
+			sourceTree = "<group>";
+		};
+		6E1067D218CBE45700603C18 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				6E1067D318CBE45700603C18 /* Chinese-SSID-Name.pcap */,
+				6E1067D418CBE45700603C18 /* cryptounittest */,
+				6E1067DE18CBE45700603C18 /* passphrases.db */,
+				6E1067DF18CBE45700603C18 /* password.lst */,
+				6E1067E018CBE45700603C18 /* replay.py */,
+				6E1067E118CBE45700603C18 /* test-airdecap-ng.sh */,
+				6E1067E218CBE45700603C18 /* test-airolib-sqlite.sh */,
+				6E1067E318CBE45700603C18 /* wep.open.system.authentication.cap */,
+				6E1067E418CBE45700603C18 /* wep.shared.key.authentication.cap */,
+				6E1067E518CBE45700603C18 /* wpa-psk-linksys.cap */,
+				6E1067E618CBE45700603C18 /* wpa.cap */,
+				6E1067E718CBE45700603C18 /* wpa2-psk-linksys.cap */,
+				6E1067E818CBE45700603C18 /* wpa2.eapol.cap */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		6E1067D418CBE45700603C18 /* cryptounittest */ = {
+			isa = PBXGroup;
+			children = (
+				6E1067D518CBE45700603C18 /* Makefile */,
+				6E1067D618CBE45700603C18 /* README */,
+				6E1067D718CBE45700603C18 /* test-calc-4pmk.c */,
+				6E1067D818CBE45700603C18 /* test-calc-mic.c */,
+				6E1067D918CBE45700603C18 /* test-calc-pmk.c */,
+				6E1067DA18CBE45700603C18 /* test-calc-ptk.c */,
+				6E1067DB18CBE45700603C18 /* test-decrypt-ccmp.c */,
+				6E1067DC18CBE45700603C18 /* test-encrypt-wep.c */,
+				6E1067DD18CBE45700603C18 /* tests.h */,
+			);
+			path = cryptounittest;
 			sourceTree = "<group>";
 		};
 		6E46EFCD18B19A330065D5D0 = {
@@ -138,7 +1148,7 @@
 		6E46EFD818B19A330065D5D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E105BE518CBD16100603C18 /* aircrack-ng.xcodeproj */,
+				6E10666018CBE45600603C18 /* aircrack-ng */,
 				6E46F00D18B19A440065D5D0 /* CoreWLAN.framework */,
 				6E46EFD918B19A330065D5D0 /* Cocoa.framework */,
 				6E46EFF818B19A340065D5D0 /* XCTest.framework */,
@@ -323,12 +1333,6 @@
 			mainGroup = 6E46EFCD18B19A330065D5D0;
 			productRefGroup = 6E46EFD718B19A330065D5D0 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 6E105BE618CBD16100603C18 /* Products */;
-					ProjectRef = 6E105BE518CBD16100603C18 /* aircrack-ng.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				6E46EFD518B19A330065D5D0 /* Wi-Fi Crack */,
@@ -342,14 +1346,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E46EFF018B19A330065D5D0 /* MainMenu.xib in Resources */,
+				6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */,
 				6E46F01A18B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.xib in Resources */,
 				6E46F02318B1A0980065D5D0 /* WFCCaptureViewController.xib in Resources */,
-				6E46EFE418B19A330065D5D0 /* InfoPlist.strings in Resources */,
-				6E46EFF218B19A330065D5D0 /* Images.xcassets in Resources */,
 				6E46F01318B19B530065D5D0 /* WFCNetworkSelectionViewController.xib in Resources */,
+				6E46EFF218B19A330065D5D0 /* Images.xcassets in Resources */,
+				6E46EFE418B19A330065D5D0 /* InfoPlist.strings in Resources */,
 				6E46EFEA18B19A330065D5D0 /* Credits.rtf in Resources */,
-				6E46F02818B1A0A90065D5D0 /* WFCCrackViewController.xib in Resources */,
-				6E46EFF018B19A330065D5D0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,13 +1372,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E46F03018B1C6750065D5D0 /* CWNetwork+SecurityDescription.m in Sources */,
+				6E10693718CBEA9000603C18 /* crypto.c in Sources */,
+				6E1068E718CBE45700603C18 /* aircrack-ng.c in Sources */,
+				6E10693618CBE9F500603C18 /* uniqueiv.c in Sources */,
+				6E1068FF18CBE45700603C18 /* darwin_tap.c in Sources */,
+				6E10693518CBE9C100603C18 /* common.c in Sources */,
+				6E10693118CBE8F600603C18 /* aircrack-ptw-lib.c in Sources */,
+				6E1068FE18CBE45700603C18 /* darwin.c in Sources */,
 				6E46EFE618B19A330065D5D0 /* main.m in Sources */,
+				6E46EFED18B19A330065D5D0 /* WFCAppDelegate.m in Sources */,
+				6E46F03018B1C6750065D5D0 /* CWNetwork+SecurityDescription.m in Sources */,
 				6E46F01D18B1A05A0065D5D0 /* WFCStore.m in Sources */,
 				6E46F05718B1E5D90065D5D0 /* CWNetwork+AirCrackNGSecurityType.m in Sources */,
 				6E46F02718B1A0A90065D5D0 /* WFCCrackViewController.m in Sources */,
 				6E46F02218B1A0980065D5D0 /* WFCCaptureViewController.m in Sources */,
-				6E46EFED18B19A330065D5D0 /* WFCAppDelegate.m in Sources */,
 				6E46F01918B19DBE0065D5D0 /* WFCInterfaceSelectionViewController.m in Sources */,
 				6E46F02B18B1BA390065D5D0 /* WFCProceedViewController.m in Sources */,
 				6E46F01218B19B530065D5D0 /* WFCNetworkSelectionViewController.m in Sources */,
@@ -385,6 +1396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E10693018CBE8A700603C18 /* aircrack-ng.c in Sources */,
 				6E46F00418B19A340065D5D0 /* Wi_Fi_CrackTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

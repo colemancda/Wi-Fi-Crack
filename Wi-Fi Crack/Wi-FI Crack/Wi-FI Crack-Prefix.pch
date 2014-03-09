@@ -7,3 +7,7 @@
 #ifdef __OBJC__
     #import <Cocoa/Cocoa.h>
 #endif
+
+#define _REVISION 1
+
+#include <pthread.h>
